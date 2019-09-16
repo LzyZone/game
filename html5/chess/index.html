@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <style type="text/css">
+        body{background: #4caf50;}
+        #my-canvas{width:600px;height:600px;}
+
+        .login-section{
+            display: none;
+            background: rgba(0,0,0,0.4);position:absolute;top:0;left:0;right:0;bottom:0;
+        }
+        .login{
+            position:absolute;background: #fff;border-radius:6px;width:360px;height:200px;top:50%;left:50%;
+            margin-left:-180px;margin-top:-100px;text-align: center;
+        }
+
+        .login-title{padding:10px 0;border-bottom:1px solid #ccc;}
+        .login-form{text-align: left;}
+        .login-form ul{margin:10px 0;padding:0;}
+        .login-form ul li{list-style: none;margin:10px 0;}
+        .login-form li label{text-align:right;pading-right:6px;display:inline-block;width:100px;}
+        .login-form .input-text{width:240px;padding:6px;}
+        .btn{border-radius:6px;background: #0baae4;border:none;padding:10px 10px;width:150px;color:#fff;}
+        .btn-cancel{background:orange;width:150px;}
+
+        .online{text-align: center;color: #fff;}
+        #start{
+            display: inline-block;padding:4px 6px;background: #2196f3;
+            text-decoration: none;color:#fff;border-radius: 4px;
+        }
+        .role{display: inline-block;width:30px;height:30px;border-radius: 15px;}
+        .white{background: #fff;}
+        .black{background: #000;}
+        #game-tips{text-align: center;}
+    </style>
+</head>
+<body>
+<div>
+    <div class="online">
+        房号:<span>1</span>,在线：<span id="online"></span>
+        <div class="role"></div>
+        <a href="javascript:;" id="start">Start</a>
+    </div>
+    <div id="game-tips">
+
+    </div>
+</div>
+<canvas id="my-canvas" width="600" height="600"></canvas>
+
+<section class="login-section">
+    <div class="login">
+        <div class="login-title">登陆</div>
+        <div class="login-form">
+            <ul>
+                <li>
+                    <label>用户名：</label><input type="text" class="input-text">
+                </li>
+                <li>
+                    <label>密码：</label><input type="password" class="input-text">
+                </li>
+                <li style="text-align: center;">
+                    <input type="button" value="确定" name="ok" class="btn">
+                    <input type="button" value="取消" name="cancel" class="btn btn-cancel">
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<script type='text/javascript'>
+    var canvas = null,ctx = null;
+    var g = {};
+    var scrollTop = 0;
+    window.onload = function () {
+        canvas = document.getElementById('my-canvas');
+        ctx = canvas.getContext('2d');
+        g.init();
+        window.addEventListener("scroll",g.scroll);
+        document.getElementById('start').addEventListener('click',g.start);
+    }
+    g.init = function () {
+        this.ws = null;
+        this.mapWidth = 540;
+        this.mapHeight = 540;
+        this.lineOffset = 60;
+        this.top = canvas.offsetTop;
+        this.left = canvas.offsetLeft;
+        this.chess = [];
+        this.param = {"cmd":"","role_type":0};
+        this.role_type = null;
+        this.timer = null;
+        this.next = null;
+        this.pingInterval = 5*1000;
+        console.log("top:"+this.top,"left:"+this.left,"scroll:"+this.scrollTop);
+        g.initMap();
+        g.i = 0;
+        canvas.addEventListener('mousedown',function (e) {
+            console.log(e);
+            var x = e.clientX;
+            var y = e.clientY;
+            g.drawChess(x,y,g.role_type);
+        });
+    }
+
+    g.scroll = function(e){
+        scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        //console.log("scroll:",scrollTop);
+    }
+
+    g.initMap = function(){
+        this.map = [];
+        var k = 0;
+        var imax = this.mapWidth;
+        var jmax = this.top + this.mapHeight;
+        for(var i=60;i<=imax;i+=this.lineOffset){
+            g.drawLine(i,60,i,this.mapHeight);
+            for(var j=60;j<=jmax;j+=this.lineOffset){
+                this.map.push([i+this.left,j+this.top]);
+                k++;
+                if(i == 60)g.drawLine(60,j,this.mapWidth,j);
+            }
+        }
+        console.log(this.map);
+    }
+    g.start = function(){
+        g.clear();
+        g.initSocket();
+    }
+
+    g.messageEncode = function(param){
+        param.room_id = 1;
+        param.role_type = g.role_type;
+        return JSON.stringify(param);
+    }
+
+    g.showOnline = function(count){
+        document.getElementById('online').innerText = count;
+    }
+
+    g.initSocket = function(){
+        this.ws = null;
+        if ("WebSocket" in window)
+        {
+            //alert("您的浏览器支持 WebSocket!");
+            // 打开一个 web socket
+            this.ws = new WebSocket("ws://127.0.0.1:8080");
+
+            this.ws.onopen = function()
+            {
+                // Web Socket 已连接上，使用 send() 方法发送数据
+                g.ws.send(g.messageEncode({"cmd":"login"}));
+                console.log("数据发送中...");
+            };
+
+            this.ws.onmessage = function (evt)
+            {
+                var received_msg = evt.data;
+                received_msg = eval('('+received_msg+')');
+                var cmd = received_msg.cmd || '';
+                switch (cmd) {
+                    case 'login':
+                        g.role_type = received_msg.role_type;
+                        //g.showOnline(received_msg.online_count);
+                        g.ping();
+
+                        var role_doc = document.getElementsByClassName('role')[0];
+                        var className = role_doc.className;
+                        var addClass = g.role_type == 1 ? 'black' : 'white';
+                        role_doc.className = className.replace(/white/,'').replace(/black/,'')
+                            + ' ' + addClass;
+
+                        break;
+                    case 'game':
+                        g.chess.push([received_msg.x,received_msg.y]);
+                        g.drawChessOnly(received_msg.x,received_msg.y,received_msg.role_type);
+                        g.next = !received_msg.role_type;
+
+                        document.getElementById('game-tips').innerText = g.next == 1 ? '黑棋落子' : '白棋落子';
+
+
+                        break;
+                    case 'ping':
+                        g.showOnline(received_msg.online_count);
+                        break;
+                    case 'win':
+                        g.drawChessOnly(received_msg.x,received_msg.y,received_msg.role_type);
+                        g.stopPing();
+                        var done_txt = g.role_type == received_msg.role_type ? 'GAME WIN!' : 'GAME LOST'
+                        g.done(done_txt);
+                        console.log('the win');
+                        break;
+                    case 'closed':
+                        g.clear();
+                        break;
+                    default:
+                }
+                console.log("数据已接收...",received_msg);
+            };
+
+            this.ws.onclose = function()
+            {
+                // 关闭 websocket
+                console.log("连接已关闭");
+                window.clearInterval(g.timer);
+                //g.clear();
+            };
+        }else
+        {
+            // 浏览器不支持 WebSocket
+            alert("您的浏览器不支持 WebSocket!");
+        }
+    }
+
+    g.done = function(msg){
+        ctx.font="30px Georgia";
+        //ctx.fillStyle = "#ffffff";
+        var gradient=ctx.createLinearGradient(0,0,canvas.width,0);
+        gradient.addColorStop("0","magenta");
+        gradient.addColorStop("0.5","blue");
+        gradient.addColorStop("1.0","red");
+        //用渐变填色
+        ctx.fillStyle=gradient;
+        ctx.fillText(msg,canvas.width/2,canvas.height/2);
+    }
+
+
+    g.ping = function(){
+        if(!g.timer){
+            g.timer = window.setInterval(g.pingCallBack,g.pingInterval);
+        }
+    }
+
+    g.stopPing = function(){
+        return false;
+        g.timer && window.clearInterval(g.timer);
+        g.timer = null;
+    }
+
+    g.pingCallBack = function(){
+        console.log('ping');
+        g.ws && g.ws.send(g.messageEncode({cmd:'ping'}));
+    }
+
+    g.drawLine = function (x1,y1,x2,y2) {
+        ctx.strokeStyle="#ddd";
+        ctx.moveTo(x1,y1);
+        ctx.lineTo(x2,y2);
+        ctx.stroke();
+    }
+
+    g.clear = function(){
+        g.ws = null;
+        window.clearInterval(g.timer);
+        g.timer = null;
+        g.role_type = null;
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        g.initMap();
+    }
+
+    g.drawChess = function (x,y,role_type) {
+        if(this.next != null && this.next != role_type){
+            console.log('对手还未落子');
+            return false;
+        }
+
+        if(role_type == 0){
+            ctx.fillStyle="#fff";
+        }else{
+            ctx.fillStyle="#000";
+        }
+
+        /*边界问题*/
+        if(x <= 60 || y <= 60 || x > canvas.width-50 || y > canvas.height-50){
+            //return ;
+        }
+
+        var xm = (x-this.left)%60;
+        var ym = (y-this.top)%60;
+        console.log("top:"+this.top,"x:"+x,"y:"+y,"xm:"+xm,"ym:"+ym,"scroll:"+scrollTop);
+        x = xm >= 30 ? ((x-xm)+60) : x-xm;
+        if(scrollTop > 0){
+            y += scrollTop;
+            ym = (y-this.top)%60;
+        }
+        y = ym >= 30 ? ((y-ym)+60) : y-ym;
+        console.log("x:"+x,"y:"+y,"scroll:"+scrollTop);
+
+        for(var i in this.map){
+            if(this.map[i][0] == x && this.map[i][1] == y && this.checkChess(x,y)){
+                g.i++;
+                ctx.beginPath();
+                ctx.arc(x-this.left,y-this.top,20,0,2*Math.PI);
+                ctx.fill();
+                this.chess.push([x,y]);
+                var msg = {cmd:'game',role_type:g.role_type,x:x,y:y};
+                g.ws.send(g.messageEncode(msg));
+                console.log(x,y);
+                return;
+            }
+        }
+    }
+
+    g.drawChessOnly = function(x,y,role_type){
+        if(role_type == 0){
+            ctx.fillStyle="#fff";
+        }else{
+            ctx.fillStyle="#000";
+        }
+        ctx.beginPath();
+        ctx.arc(x-this.left,y-this.top,20,0,2*Math.PI);
+        ctx.fill();
+    }
+    
+    g.checkChess = function (x,y) {
+        for(var i in this.chess){
+            if(this.chess[i][0] == x && this.chess[i][1] == y){
+                return false;
+            }
+        }
+        return true;
+    }
+
+</script>
+</body>
+</html>
