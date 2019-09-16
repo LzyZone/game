@@ -1,0 +1,936 @@
+2019-09-06 03:14:41 pid:21031 Workerman[start.php] start in DEBUG mode
+2019-09-06 03:16:57 pid:21031 Workerman[start.php] stopping ...
+2019-09-06 03:16:59 pid:21031 worker[GobangBusinessWorker:21035] exit with status 9
+2019-09-06 03:16:59 pid:21031 worker[GobangBusinessWorker:21034] exit with status 9
+2019-09-06 03:16:59 pid:21031 worker[Register:21040] exit with status 9
+2019-09-06 03:16:59 pid:21031 worker[GobangGateway:21039] exit with status 9
+2019-09-06 03:16:59 pid:21031 worker[GobangGateway:21038] exit with status 9
+2019-09-06 03:16:59 pid:21031 worker[GobangGateway:21037] exit with status 9
+2019-09-06 03:16:59 pid:21031 worker[GobangGateway:21036] exit with status 9
+2019-09-06 03:16:59 pid:21031 worker[GobangBusinessWorker:21033] exit with status 9
+2019-09-06 03:16:59 pid:21031 worker[GobangBusinessWorker:21032] exit with status 9
+2019-09-06 03:16:59 pid:21031 Workerman[start.php] has been stopped
+2019-09-06 03:17:01 pid:21461 Workerman[start.php] start in DEBUG mode
+2019-09-06 03:17:03 pid:21464 Error: Access to undeclared static property: Events::$user_cnt in /Users/gary/www/game/servers/php/Applications/Gobang/Events.php:32
+Stack trace:
+#0 [internal function]: Events::onConnect('7f0000010a8f000...')
+#1 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(398): call_user_func('Events::onConne...', '7f0000010a8f000...')
+#2 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2367): Workerman\Events\Select->loop()
+#5 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): GatewayWorker\BusinessWorker->run()
+#7 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /Users/gary/www/game/servers/php/start.php(37): Workerman\Worker::runAll()
+#11 {main}
+2019-09-06 03:17:03 pid:21464 Worker[21464] process terminated
+2019-09-06 03:17:23 pid:21461 Workerman[start.php] stopping ...
+2019-09-06 03:17:23 pid:21461 worker[GobangBusinessWorker:21464] exit with status 11
+2019-09-06 03:17:25 pid:21461 worker[GobangBusinessWorker:21463] exit with status 9
+2019-09-06 03:17:25 pid:21461 worker[GobangGateway:21466] exit with status 9
+2019-09-06 03:17:25 pid:21461 worker[Register:21470] exit with status 9
+2019-09-06 03:17:25 pid:21461 worker[GobangGateway:21469] exit with status 9
+2019-09-06 03:17:25 pid:21461 worker[GobangGateway:21468] exit with status 9
+2019-09-06 03:17:25 pid:21461 worker[GobangGateway:21467] exit with status 9
+2019-09-06 03:17:25 pid:21461 worker[GobangBusinessWorker:21465] exit with status 9
+2019-09-06 03:17:25 pid:21461 worker[GobangBusinessWorker:21462] exit with status 9
+2019-09-06 03:17:25 pid:21461 Workerman[start.php] has been stopped
+2019-09-06 03:17:27 pid:21551 Workerman[start.php] start in DEBUG mode
+2019-09-06 03:18:16 pid:21551 Workerman[start.php] stopping ...
+2019-09-06 03:18:18 pid:21551 worker[GobangGateway:21560] exit with status 9
+2019-09-06 03:18:18 pid:21551 worker[Register:21562] exit with status 9
+2019-09-06 03:18:18 pid:21551 worker[GobangGateway:21561] exit with status 9
+2019-09-06 03:18:18 pid:21551 worker[GobangGateway:21559] exit with status 9
+2019-09-06 03:18:18 pid:21551 worker[GobangGateway:21558] exit with status 9
+2019-09-06 03:18:18 pid:21551 worker[GobangBusinessWorker:21557] exit with status 9
+2019-09-06 03:18:18 pid:21551 worker[GobangBusinessWorker:21556] exit with status 9
+2019-09-06 03:18:18 pid:21551 worker[GobangBusinessWorker:21555] exit with status 9
+2019-09-06 03:18:18 pid:21551 worker[GobangBusinessWorker:21554] exit with status 9
+2019-09-06 03:18:18 pid:21551 Workerman[start.php] has been stopped
+2019-09-06 03:18:20 pid:21723 Workerman[start.php] start in DEBUG mode
+2019-09-06 03:20:16 pid:21723 Workerman[start.php] stopping ...
+2019-09-06 03:20:18 pid:21723 worker[GobangGateway:21732] exit with status 9
+2019-09-06 03:20:18 pid:21723 worker[GobangGateway:21735] exit with status 9
+2019-09-06 03:20:18 pid:21723 worker[Register:21736] exit with status 9
+2019-09-06 03:20:18 pid:21723 worker[GobangGateway:21734] exit with status 9
+2019-09-06 03:20:18 pid:21723 worker[GobangGateway:21733] exit with status 9
+2019-09-06 03:20:18 pid:21723 worker[GobangBusinessWorker:21731] exit with status 9
+2019-09-06 03:20:18 pid:21723 worker[GobangBusinessWorker:21730] exit with status 9
+2019-09-06 03:20:18 pid:21723 worker[GobangBusinessWorker:21729] exit with status 9
+2019-09-06 03:20:18 pid:21723 worker[GobangBusinessWorker:21728] exit with status 9
+2019-09-06 03:20:18 pid:21723 Workerman[start.php] has been stopped
+2019-09-06 03:20:21 pid:22099 Workerman[start.php] start in DEBUG mode
+2019-09-06 03:21:23 pid:22099 Workerman[start.php] stopping ...
+2019-09-06 03:21:25 pid:22099 worker[Register:22110] exit with status 9
+2019-09-06 03:21:25 pid:22099 worker[GobangGateway:22109] exit with status 9
+2019-09-06 03:21:25 pid:22099 worker[GobangGateway:22108] exit with status 9
+2019-09-06 03:21:25 pid:22099 worker[GobangGateway:22107] exit with status 9
+2019-09-06 03:21:25 pid:22099 worker[GobangGateway:22106] exit with status 9
+2019-09-06 03:21:25 pid:22099 worker[GobangBusinessWorker:22105] exit with status 9
+2019-09-06 03:21:25 pid:22099 worker[GobangBusinessWorker:22104] exit with status 9
+2019-09-06 03:21:25 pid:22099 worker[GobangBusinessWorker:22103] exit with status 9
+2019-09-06 03:21:25 pid:22099 worker[GobangBusinessWorker:22102] exit with status 9
+2019-09-06 03:21:25 pid:22099 Workerman[start.php] has been stopped
+2019-09-06 03:21:27 pid:22309 Workerman[start.php] start in DEBUG mode
+2019-09-06 03:21:53 pid:22309 Workerman[start.php] stopping ...
+2019-09-06 03:21:55 pid:22309 worker[GobangGateway:22315] exit with status 9
+2019-09-06 03:21:55 pid:22309 worker[GobangGateway:22316] exit with status 9
+2019-09-06 03:21:55 pid:22309 worker[Register:22318] exit with status 9
+2019-09-06 03:21:55 pid:22309 worker[GobangGateway:22317] exit with status 9
+2019-09-06 03:21:55 pid:22309 worker[GobangGateway:22314] exit with status 9
+2019-09-06 03:21:55 pid:22309 worker[GobangBusinessWorker:22313] exit with status 9
+2019-09-06 03:21:55 pid:22309 worker[GobangBusinessWorker:22312] exit with status 9
+2019-09-06 03:21:55 pid:22309 worker[GobangBusinessWorker:22311] exit with status 9
+2019-09-06 03:21:55 pid:22309 worker[GobangBusinessWorker:22310] exit with status 9
+2019-09-06 03:21:55 pid:22309 Workerman[start.php] has been stopped
+2019-09-06 03:21:57 pid:22407 Workerman[start.php] start in DEBUG mode
+2019-09-06 03:22:33 pid:22407 Workerman[start.php] stopping ...
+2019-09-06 03:22:35 pid:22407 worker[GobangBusinessWorker:22411] exit with status 9
+2019-09-06 03:22:35 pid:22407 worker[GobangGateway:22413] exit with status 9
+2019-09-06 03:22:35 pid:22407 worker[Register:22416] exit with status 9
+2019-09-06 03:22:35 pid:22407 worker[GobangGateway:22415] exit with status 9
+2019-09-06 03:22:35 pid:22407 worker[GobangGateway:22414] exit with status 9
+2019-09-06 03:22:35 pid:22407 worker[GobangGateway:22412] exit with status 9
+2019-09-06 03:22:35 pid:22407 worker[GobangBusinessWorker:22410] exit with status 9
+2019-09-06 03:22:35 pid:22407 worker[GobangBusinessWorker:22409] exit with status 9
+2019-09-06 03:22:35 pid:22407 worker[GobangBusinessWorker:22408] exit with status 9
+2019-09-06 03:22:35 pid:22407 Workerman[start.php] has been stopped
+2019-09-06 03:22:37 pid:22541 Workerman[start.php] start in DEBUG mode
+2019-09-06 03:23:10 pid:22541 Workerman[start.php] stopping ...
+2019-09-06 03:23:12 pid:22541 worker[GobangGateway:22547] exit with status 9
+2019-09-06 03:23:12 pid:22541 worker[GobangGateway:22549] exit with status 9
+2019-09-06 03:23:12 pid:22541 worker[Register:22550] exit with status 9
+2019-09-06 03:23:12 pid:22541 worker[GobangGateway:22548] exit with status 9
+2019-09-06 03:23:12 pid:22541 worker[GobangGateway:22546] exit with status 9
+2019-09-06 03:23:12 pid:22541 worker[GobangBusinessWorker:22545] exit with status 9
+2019-09-06 03:23:12 pid:22541 worker[GobangBusinessWorker:22544] exit with status 9
+2019-09-06 03:23:12 pid:22541 worker[GobangBusinessWorker:22543] exit with status 9
+2019-09-06 03:23:12 pid:22541 worker[GobangBusinessWorker:22542] exit with status 9
+2019-09-06 03:23:12 pid:22541 Workerman[start.php] has been stopped
+2019-09-06 03:23:13 pid:22693 Workerman[start.php] start in DEBUG mode
+2019-09-06 03:23:31 pid:22693 Workerman[start.php] stopping ...
+2019-09-06 03:23:33 pid:22693 worker[GobangGateway:22701] exit with status 9
+2019-09-06 03:23:33 pid:22693 worker[GobangGateway:22703] exit with status 9
+2019-09-06 03:23:33 pid:22693 worker[Register:22704] exit with status 9
+2019-09-06 03:23:33 pid:22693 worker[GobangGateway:22702] exit with status 9
+2019-09-06 03:23:33 pid:22693 worker[GobangGateway:22700] exit with status 9
+2019-09-06 03:23:33 pid:22693 worker[GobangBusinessWorker:22699] exit with status 9
+2019-09-06 03:23:33 pid:22693 worker[GobangBusinessWorker:22698] exit with status 9
+2019-09-06 03:23:33 pid:22693 worker[GobangBusinessWorker:22697] exit with status 9
+2019-09-06 03:23:33 pid:22693 worker[GobangBusinessWorker:22696] exit with status 9
+2019-09-06 03:23:33 pid:22693 Workerman[start.php] has been stopped
+2019-09-06 03:23:35 pid:22791 Workerman[start.php] start in DEBUG mode
+2019-09-06 07:18:54 pid:22791 Workerman[start.php] stopping ...
+2019-09-06 07:18:56 pid:22791 worker[GobangBusinessWorker:22795] exit with status 9
+2019-09-06 07:18:56 pid:22791 worker[Register:22800] exit with status 9
+2019-09-06 07:18:56 pid:22791 worker[GobangGateway:22799] exit with status 9
+2019-09-06 07:18:56 pid:22791 worker[GobangGateway:22798] exit with status 9
+2019-09-06 07:18:56 pid:22791 worker[GobangGateway:22797] exit with status 9
+2019-09-06 07:18:56 pid:22791 worker[GobangGateway:22796] exit with status 9
+2019-09-06 07:18:56 pid:22791 worker[GobangBusinessWorker:22794] exit with status 9
+2019-09-06 07:18:56 pid:22791 worker[GobangBusinessWorker:22793] exit with status 9
+2019-09-06 07:18:56 pid:22791 worker[GobangBusinessWorker:22792] exit with status 9
+2019-09-06 07:18:56 pid:22791 Workerman[start.php] has been stopped
+2019-09-06 07:20:27 pid:47861 Workerman[start.php] start in DEBUG mode
+2019-09-06 08:13:27 pid:47861 Workerman[start.php] stopping ...
+2019-09-06 08:13:29 pid:47861 worker[GobangGateway:47867] exit with status 9
+2019-09-06 08:13:29 pid:47861 worker[GobangGateway:47868] exit with status 9
+2019-09-06 08:13:29 pid:47861 worker[Register:47870] exit with status 9
+2019-09-06 08:13:29 pid:47861 worker[GobangGateway:47869] exit with status 9
+2019-09-06 08:13:29 pid:47861 worker[GobangGateway:47866] exit with status 9
+2019-09-06 08:13:29 pid:47861 worker[GobangBusinessWorker:47865] exit with status 9
+2019-09-06 08:13:29 pid:47861 worker[GobangBusinessWorker:47864] exit with status 9
+2019-09-06 08:13:29 pid:47861 worker[GobangBusinessWorker:47863] exit with status 9
+2019-09-06 08:13:29 pid:47861 worker[GobangBusinessWorker:47862] exit with status 9
+2019-09-06 08:13:29 pid:47861 Workerman[start.php] has been stopped
+2019-09-06 08:13:32 pid:58188 Workerman[start.php] start in DEBUG mode
+2019-09-06 09:24:44 pid:58188 Workerman[start.php] stopping ...
+2019-09-06 09:24:46 pid:58188 worker[GobangGateway:58194] exit with status 9
+2019-09-06 09:24:46 pid:58188 worker[Register:58197] exit with status 9
+2019-09-06 09:24:46 pid:58188 worker[GobangGateway:58196] exit with status 9
+2019-09-06 09:24:46 pid:58188 worker[GobangGateway:58195] exit with status 9
+2019-09-06 09:24:46 pid:58188 worker[GobangGateway:58193] exit with status 9
+2019-09-06 09:24:46 pid:58188 worker[GobangBusinessWorker:58192] exit with status 9
+2019-09-06 09:24:46 pid:58188 worker[GobangBusinessWorker:58191] exit with status 9
+2019-09-06 09:24:46 pid:58188 worker[GobangBusinessWorker:58190] exit with status 9
+2019-09-06 09:24:46 pid:58188 worker[GobangBusinessWorker:58189] exit with status 9
+2019-09-06 09:24:46 pid:58188 Workerman[start.php] has been stopped
+2019-09-06 09:24:47 pid:71799 Workerman[start.php] start in DEBUG mode
+2019-09-06 10:25:43 pid:71799 Workerman[start.php] stopping ...
+2019-09-06 10:25:45 pid:71799 worker[GobangGateway:71807] exit with status 9
+2019-09-06 10:25:45 pid:71799 worker[GobangGateway:71809] exit with status 9
+2019-09-06 10:25:45 pid:71799 worker[Register:71810] exit with status 9
+2019-09-06 10:25:45 pid:71799 worker[GobangGateway:71808] exit with status 9
+2019-09-06 10:25:45 pid:71799 worker[GobangGateway:71806] exit with status 9
+2019-09-06 10:25:45 pid:71799 worker[GobangBusinessWorker:71805] exit with status 9
+2019-09-06 10:25:45 pid:71799 worker[GobangBusinessWorker:71804] exit with status 9
+2019-09-06 10:25:45 pid:71799 worker[GobangBusinessWorker:71803] exit with status 9
+2019-09-06 10:25:45 pid:71799 worker[GobangBusinessWorker:71802] exit with status 9
+2019-09-06 10:25:45 pid:71799 Workerman[start.php] has been stopped
+2019-09-07 15:24:20 pid:2969 Workerman[start.php] start in DEBUG mode
+2019-09-07 15:26:00 pid:2969 Workerman[start.php] stopping ...
+2019-09-07 15:26:02 pid:2969 worker[GobangGateway:2976] exit with status 9
+2019-09-07 15:26:02 pid:2969 worker[GobangGateway:2977] exit with status 9
+2019-09-07 15:26:02 pid:2969 worker[Register:2978] exit with status 9
+2019-09-07 15:26:02 pid:2969 worker[GobangGateway:2975] exit with status 9
+2019-09-07 15:26:02 pid:2969 worker[GobangGateway:2974] exit with status 9
+2019-09-07 15:26:02 pid:2969 worker[GobangBusinessWorker:2973] exit with status 9
+2019-09-07 15:26:02 pid:2969 worker[GobangBusinessWorker:2972] exit with status 9
+2019-09-07 15:26:02 pid:2969 worker[GobangBusinessWorker:2971] exit with status 9
+2019-09-07 15:26:02 pid:2969 worker[GobangBusinessWorker:2970] exit with status 9
+2019-09-07 15:26:02 pid:2969 Workerman[start.php] has been stopped
+2019-09-07 15:26:04 pid:3295 Workerman[start.php] start in DEBUG mode
+2019-09-07 15:26:28 pid:3295 Workerman[start.php] stopping ...
+2019-09-07 15:26:30 pid:3295 worker[GobangGateway:3302] exit with status 9
+2019-09-07 15:26:30 pid:3295 worker[GobangGateway:3305] exit with status 9
+2019-09-07 15:26:30 pid:3295 worker[Register:3306] exit with status 9
+2019-09-07 15:26:30 pid:3295 worker[GobangGateway:3304] exit with status 9
+2019-09-07 15:26:30 pid:3295 worker[GobangGateway:3303] exit with status 9
+2019-09-07 15:26:30 pid:3295 worker[GobangBusinessWorker:3301] exit with status 9
+2019-09-07 15:26:30 pid:3295 worker[GobangBusinessWorker:3300] exit with status 9
+2019-09-07 15:26:30 pid:3295 worker[GobangBusinessWorker:3299] exit with status 9
+2019-09-07 15:26:30 pid:3295 worker[GobangBusinessWorker:3298] exit with status 9
+2019-09-07 15:26:30 pid:3295 Workerman[start.php] has been stopped
+2019-09-07 15:26:31 pid:3385 Workerman[start.php] start in DEBUG mode
+2019-09-07 15:26:59 pid:3385 Workerman[start.php] stopping ...
+2019-09-07 15:27:01 pid:3385 worker[GobangGateway:3393] exit with status 9
+2019-09-07 15:27:01 pid:3385 worker[GobangGateway:3392] exit with status 9
+2019-09-07 15:27:01 pid:3385 worker[Register:3396] exit with status 9
+2019-09-07 15:27:01 pid:3385 worker[GobangGateway:3395] exit with status 9
+2019-09-07 15:27:01 pid:3385 worker[GobangGateway:3394] exit with status 9
+2019-09-07 15:27:01 pid:3385 worker[GobangBusinessWorker:3391] exit with status 9
+2019-09-07 15:27:01 pid:3385 worker[GobangBusinessWorker:3390] exit with status 9
+2019-09-07 15:27:01 pid:3385 worker[GobangBusinessWorker:3389] exit with status 9
+2019-09-07 15:27:01 pid:3385 worker[GobangBusinessWorker:3388] exit with status 9
+2019-09-07 15:27:01 pid:3385 Workerman[start.php] has been stopped
+2019-09-07 15:27:03 pid:3495 Workerman[start.php] start in DEBUG mode
+2019-09-07 16:04:25 pid:3495 Workerman[start.php] stopping ...
+2019-09-07 16:04:27 pid:3495 worker[GobangBusinessWorker:3499] exit with status 9
+2019-09-07 16:04:27 pid:3495 worker[GobangBusinessWorker:3498] exit with status 9
+2019-09-07 16:04:27 pid:3495 worker[Register:3504] exit with status 9
+2019-09-07 16:04:27 pid:3495 worker[GobangGateway:3503] exit with status 9
+2019-09-07 16:04:27 pid:3495 worker[GobangGateway:3502] exit with status 9
+2019-09-07 16:04:27 pid:3495 worker[GobangGateway:3501] exit with status 9
+2019-09-07 16:04:27 pid:3495 worker[GobangGateway:3500] exit with status 9
+2019-09-07 16:04:27 pid:3495 worker[GobangBusinessWorker:3497] exit with status 9
+2019-09-07 16:04:27 pid:3495 worker[GobangBusinessWorker:3496] exit with status 9
+2019-09-07 16:04:27 pid:3495 Workerman[start.php] has been stopped
+2019-09-07 16:04:29 pid:10315 Workerman[start.php] start in DEBUG mode
+2019-09-07 16:08:37 pid:10315 Workerman[start.php] stopping ...
+2019-09-07 16:08:39 pid:10315 worker[GobangGateway:10323] exit with status 9
+2019-09-07 16:08:39 pid:10315 worker[Register:10324] exit with status 9
+2019-09-07 16:08:39 pid:10315 worker[GobangGateway:10322] exit with status 9
+2019-09-07 16:08:39 pid:10315 worker[GobangGateway:10321] exit with status 9
+2019-09-07 16:08:39 pid:10315 worker[GobangGateway:10320] exit with status 9
+2019-09-07 16:08:39 pid:10315 worker[GobangBusinessWorker:10319] exit with status 9
+2019-09-07 16:08:39 pid:10315 worker[GobangBusinessWorker:10318] exit with status 9
+2019-09-07 16:08:39 pid:10315 worker[GobangBusinessWorker:10317] exit with status 9
+2019-09-07 16:08:39 pid:10315 worker[GobangBusinessWorker:10316] exit with status 9
+2019-09-07 16:08:39 pid:10315 Workerman[start.php] has been stopped
+2019-09-08 02:28:06 pid:6535 Workerman[start.php] start in DEBUG mode
+2019-09-08 02:28:06 pid:6543 TypeError: Argument 1 passed to Events::onWorkerStart() must be an instance of BusinessWorker, instance of GatewayWorker\BusinessWorker given in /Users/gary/www/game/servers/php/Applications/Gobang/Events.php:30
+Stack trace:
+#0 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#1 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#2 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2352): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#3 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): GatewayWorker\BusinessWorker->run()
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#8 /Users/gary/www/game/servers/php/start.php(38): Workerman\Worker::runAll()
+#9 {main}
+2019-09-08 02:28:06 pid:6542 TypeError: Argument 1 passed to Events::onWorkerStart() must be an instance of BusinessWorker, instance of GatewayWorker\BusinessWorker given in /Users/gary/www/game/servers/php/Applications/Gobang/Events.php:30
+Stack trace:
+#0 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#1 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#2 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2352): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#3 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): GatewayWorker\BusinessWorker->run()
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#8 /Users/gary/www/game/servers/php/start.php(38): Workerman\Worker::runAll()
+#9 {main}
+2019-09-08 02:28:06 pid:6541 TypeError: Argument 1 passed to Events::onWorkerStart() must be an instance of BusinessWorker, instance of GatewayWorker\BusinessWorker given in /Users/gary/www/game/servers/php/Applications/Gobang/Events.php:30
+Stack trace:
+#0 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#1 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#2 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2352): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#3 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): GatewayWorker\BusinessWorker->run()
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#8 /Users/gary/www/game/servers/php/start.php(38): Workerman\Worker::runAll()
+#9 {main}
+2019-09-08 02:28:06 pid:6540 TypeError: Argument 1 passed to Events::onWorkerStart() must be an instance of BusinessWorker, instance of GatewayWorker\BusinessWorker given in /Users/gary/www/game/servers/php/Applications/Gobang/Events.php:30
+Stack trace:
+#0 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#1 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#2 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2352): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#3 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): GatewayWorker\BusinessWorker->run()
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#8 /Users/gary/www/game/servers/php/start.php(38): Workerman\Worker::runAll()
+#9 {main}
+2019-09-08 02:28:07 pid:6543 Worker[6543] process terminated
+2019-09-08 02:28:07 pid:6542 Worker[6542] process terminated
+2019-09-08 02:28:07 pid:6541 Worker[6541] process terminated
+2019-09-08 02:28:07 pid:6540 Worker[6540] process terminated
+2019-09-08 02:28:16 pid:6548 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2019-09-08 02:28:16 pid:6548 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2019-09-08 02:28:16 pid:6548 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2019-09-08 02:28:16 pid:6548 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2019-09-08 02:28:43 pid:6535 Workerman[start.php] stopping ...
+2019-09-08 02:28:43 pid:6535 worker[GobangBusinessWorker:6543] exit with status 11
+2019-09-08 02:28:43 pid:6535 worker[GobangBusinessWorker:6542] exit with status 11
+2019-09-08 02:28:43 pid:6535 worker[GobangBusinessWorker:6541] exit with status 11
+2019-09-08 02:28:43 pid:6535 worker[GobangBusinessWorker:6540] exit with status 11
+2019-09-08 02:28:45 pid:6535 worker[GobangGateway:6546] exit with status 9
+2019-09-08 02:28:45 pid:6535 worker[GobangGateway:6547] exit with status 9
+2019-09-08 02:28:45 pid:6535 worker[Register:6548] exit with status 9
+2019-09-08 02:28:45 pid:6535 worker[GobangGateway:6545] exit with status 9
+2019-09-08 02:28:45 pid:6535 worker[GobangGateway:6544] exit with status 9
+2019-09-08 02:28:45 pid:6535 Workerman[start.php] has been stopped
+2019-09-08 02:28:48 pid:6678 Workerman[start.php] start in DEBUG mode
+2019-09-08 02:31:12 pid:6678 Workerman[start.php] stopping ...
+2019-09-08 02:31:14 pid:6678 worker[GobangBusinessWorker:6682] exit with status 9
+2019-09-08 02:31:14 pid:6678 worker[GobangGateway:6684] exit with status 9
+2019-09-08 02:31:14 pid:6678 worker[Register:6687] exit with status 9
+2019-09-08 02:31:14 pid:6678 worker[GobangGateway:6686] exit with status 9
+2019-09-08 02:31:14 pid:6678 worker[GobangGateway:6685] exit with status 9
+2019-09-08 02:31:14 pid:6678 worker[GobangGateway:6683] exit with status 9
+2019-09-08 02:31:14 pid:6678 worker[GobangBusinessWorker:6681] exit with status 9
+2019-09-08 02:31:14 pid:6678 worker[GobangBusinessWorker:6680] exit with status 9
+2019-09-08 02:31:14 pid:6678 worker[GobangBusinessWorker:6679] exit with status 9
+2019-09-08 02:31:14 pid:6678 Workerman[start.php] has been stopped
+2019-09-08 02:31:17 pid:7215 Workerman[start.php] start in DEBUG mode
+2019-09-08 02:39:34 pid:7215 Workerman[start.php] stopping ...
+2019-09-08 02:39:36 pid:7215 worker[GobangBusinessWorker:7218] exit with status 9
+2019-09-08 02:39:36 pid:7215 worker[GobangBusinessWorker:7219] exit with status 9
+2019-09-08 02:39:36 pid:7215 worker[Register:7224] exit with status 9
+2019-09-08 02:39:36 pid:7215 worker[GobangGateway:7223] exit with status 9
+2019-09-08 02:39:36 pid:7215 worker[GobangGateway:7222] exit with status 9
+2019-09-08 02:39:36 pid:7215 worker[GobangGateway:7221] exit with status 9
+2019-09-08 02:39:36 pid:7215 worker[GobangGateway:7220] exit with status 9
+2019-09-08 02:39:36 pid:7215 worker[GobangBusinessWorker:7217] exit with status 9
+2019-09-08 02:39:36 pid:7215 worker[GobangBusinessWorker:7216] exit with status 9
+2019-09-08 02:39:36 pid:7215 Workerman[start.php] has been stopped
+2019-09-08 02:39:39 pid:8760 Workerman[start.php] start in DEBUG mode
+2019-09-08 02:40:49 pid:8760 Workerman[start.php] stopping ...
+2019-09-08 02:40:51 pid:8760 worker[GobangGateway:8765] exit with status 9
+2019-09-08 02:40:51 pid:8760 worker[GobangGateway:8768] exit with status 9
+2019-09-08 02:40:51 pid:8760 worker[Register:8769] exit with status 9
+2019-09-08 02:40:51 pid:8760 worker[GobangGateway:8767] exit with status 9
+2019-09-08 02:40:51 pid:8760 worker[GobangGateway:8766] exit with status 9
+2019-09-08 02:40:51 pid:8760 worker[GobangBusinessWorker:8764] exit with status 9
+2019-09-08 02:40:51 pid:8760 worker[GobangBusinessWorker:8763] exit with status 9
+2019-09-08 02:40:51 pid:8760 worker[GobangBusinessWorker:8762] exit with status 9
+2019-09-08 02:40:51 pid:8760 worker[GobangBusinessWorker:8761] exit with status 9
+2019-09-08 02:40:51 pid:8760 Workerman[start.php] has been stopped
+2019-09-08 02:40:52 pid:9070 Workerman[start.php] start in DEBUG mode
+2019-09-08 02:47:04 pid:9070 Workerman[start.php] stopping ...
+2019-09-08 02:47:06 pid:9070 worker[GobangBusinessWorker:9075] exit with status 9
+2019-09-08 02:47:06 pid:9070 worker[GobangGateway:9079] exit with status 9
+2019-09-08 02:47:06 pid:9070 worker[GobangGateway:9080] exit with status 9
+2019-09-08 02:47:06 pid:9070 worker[Register:9081] exit with status 9
+2019-09-08 02:47:06 pid:9070 worker[GobangGateway:9078] exit with status 9
+2019-09-08 02:47:06 pid:9070 worker[GobangGateway:9077] exit with status 9
+2019-09-08 02:47:06 pid:9070 worker[GobangBusinessWorker:9076] exit with status 9
+2019-09-08 02:47:06 pid:9070 worker[GobangBusinessWorker:9074] exit with status 9
+2019-09-08 02:47:06 pid:9070 worker[GobangBusinessWorker:9073] exit with status 9
+2019-09-08 02:47:06 pid:9070 Workerman[start.php] has been stopped
+2019-09-08 02:47:08 pid:10214 Workerman[start.php] start in DEBUG mode
+2019-09-08 08:06:03 pid:10214 Workerman[start.php] stopping ...
+2019-09-08 08:06:05 pid:10214 worker[GobangBusinessWorker:10216] exit with status 9
+2019-09-08 08:06:05 pid:10214 worker[GobangGateway:10219] exit with status 9
+2019-09-08 08:06:05 pid:10214 worker[Register:10223] exit with status 9
+2019-09-08 08:06:05 pid:10214 worker[GobangGateway:10222] exit with status 9
+2019-09-08 08:06:05 pid:10214 worker[GobangGateway:10221] exit with status 9
+2019-09-08 08:06:05 pid:10214 worker[GobangGateway:10220] exit with status 9
+2019-09-08 08:06:05 pid:10214 worker[GobangBusinessWorker:10218] exit with status 9
+2019-09-08 08:06:05 pid:10214 worker[GobangBusinessWorker:10217] exit with status 9
+2019-09-08 08:06:05 pid:10214 worker[GobangBusinessWorker:10215] exit with status 9
+2019-09-08 08:06:05 pid:10214 Workerman[start.php] has been stopped
+2019-09-08 08:06:07 pid:10610 Workerman[start.php] start in DEBUG mode
+2019-09-08 08:15:23 pid:10610 Workerman[start.php] stopping ...
+2019-09-08 08:15:25 pid:10610 worker[GobangGateway:10619] exit with status 9
+2019-09-08 08:15:25 pid:10610 worker[GobangGateway:10620] exit with status 9
+2019-09-08 08:15:25 pid:10610 worker[Register:10622] exit with status 9
+2019-09-08 08:15:25 pid:10610 worker[GobangGateway:10621] exit with status 9
+2019-09-08 08:15:25 pid:10610 worker[GobangGateway:10618] exit with status 9
+2019-09-08 08:15:25 pid:10610 worker[GobangBusinessWorker:10617] exit with status 9
+2019-09-08 08:15:25 pid:10610 worker[GobangBusinessWorker:10616] exit with status 9
+2019-09-08 08:15:25 pid:10610 worker[GobangBusinessWorker:10615] exit with status 9
+2019-09-08 08:15:25 pid:10610 worker[GobangBusinessWorker:10614] exit with status 9
+2019-09-08 08:15:25 pid:10610 Workerman[start.php] has been stopped
+2019-09-08 08:15:34 pid:12441 Workerman[start.php] start in DEBUG mode
+2019-09-08 08:18:17 pid:12441 Workerman[start.php] stopping ...
+2019-09-08 08:18:19 pid:12441 worker[GobangBusinessWorker:12445] exit with status 9
+2019-09-08 08:18:19 pid:12441 worker[Register:12450] exit with status 9
+2019-09-08 08:18:19 pid:12441 worker[GobangGateway:12449] exit with status 9
+2019-09-08 08:18:19 pid:12441 worker[GobangGateway:12448] exit with status 9
+2019-09-08 08:18:19 pid:12441 worker[GobangGateway:12447] exit with status 9
+2019-09-08 08:18:19 pid:12441 worker[GobangGateway:12446] exit with status 9
+2019-09-08 08:18:19 pid:12441 worker[GobangBusinessWorker:12444] exit with status 9
+2019-09-08 08:18:19 pid:12441 worker[GobangBusinessWorker:12443] exit with status 9
+2019-09-08 08:18:19 pid:12441 worker[GobangBusinessWorker:12442] exit with status 9
+2019-09-08 08:18:19 pid:12441 Workerman[start.php] has been stopped
+2019-09-08 08:18:25 pid:13053 Workerman[start.php] start in DEBUG mode
+2019-09-08 08:19:58 pid:13053 Workerman[start.php] stopping ...
+2019-09-08 08:20:00 pid:13053 worker[GobangGateway:13060] exit with status 9
+2019-09-08 08:20:00 pid:13053 worker[GobangGateway:13062] exit with status 9
+2019-09-08 08:20:00 pid:13053 worker[Register:13064] exit with status 9
+2019-09-08 08:20:00 pid:13053 worker[GobangGateway:13063] exit with status 9
+2019-09-08 08:20:00 pid:13053 worker[GobangGateway:13061] exit with status 9
+2019-09-08 08:20:00 pid:13053 worker[GobangBusinessWorker:13059] exit with status 9
+2019-09-08 08:20:00 pid:13053 worker[GobangBusinessWorker:13058] exit with status 9
+2019-09-08 08:20:00 pid:13053 worker[GobangBusinessWorker:13057] exit with status 9
+2019-09-08 08:20:00 pid:13053 worker[GobangBusinessWorker:13056] exit with status 9
+2019-09-08 08:20:00 pid:13053 Workerman[start.php] has been stopped
+2019-09-08 08:20:03 pid:13368 Workerman[start.php] start in DEBUG mode
+2019-09-08 08:20:06 pid:13370 TypeError: Argument 2 passed to GatewayWorker\Lib\Gateway::setSession() must be of the type array, string given, called in /Users/gary/www/game/servers/php/Applications/Gobang/Events.php on line 88 and defined in /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/Lib/Gateway.php:1045
+Stack trace:
+#0 /Users/gary/www/game/servers/php/Applications/Gobang/Events.php(88): GatewayWorker\Lib\Gateway::setSession('7f0000010a8e000...', '{"cmd":"login",...')
+#1 [internal function]: Events::onMessage('7f0000010a8e000...', '{"cmd":"login"}')
+#2 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010a8e000...', '{"cmd":"login"}')
+#3 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2367): Workerman\Events\Select->loop()
+#6 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#7 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): GatewayWorker\BusinessWorker->run()
+#8 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#9 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /Users/gary/www/game/servers/php/start.php(38): Workerman\Worker::runAll()
+#12 {main}
+2019-09-08 08:20:06 pid:13370 Worker[13370] process terminated
+2019-09-08 08:20:08 pid:13371 TypeError: Argument 2 passed to GatewayWorker\Lib\Gateway::setSession() must be of the type array, string given, called in /Users/gary/www/game/servers/php/Applications/Gobang/Events.php on line 88 and defined in /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/Lib/Gateway.php:1045
+Stack trace:
+#0 /Users/gary/www/game/servers/php/Applications/Gobang/Events.php(88): GatewayWorker\Lib\Gateway::setSession('7f0000010a8f000...', '{"cmd":"login",...')
+#1 [internal function]: Events::onMessage('7f0000010a8f000...', '{"cmd":"login"}')
+#2 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010a8f000...', '{"cmd":"login"}')
+#3 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #49)
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2367): Workerman\Events\Select->loop()
+#6 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#7 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): GatewayWorker\BusinessWorker->run()
+#8 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#9 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /Users/gary/www/game/servers/php/start.php(38): Workerman\Worker::runAll()
+#12 {main}
+2019-09-08 08:20:08 pid:13371 Worker[13371] process terminated
+2019-09-08 08:20:13 pid:13372 TypeError: Argument 2 passed to GatewayWorker\Lib\Gateway::setSession() must be of the type array, string given, called in /Users/gary/www/game/servers/php/Applications/Gobang/Events.php on line 88 and defined in /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/Lib/Gateway.php:1045
+Stack trace:
+#0 /Users/gary/www/game/servers/php/Applications/Gobang/Events.php(88): GatewayWorker\Lib\Gateway::setSession('7f0000010a8e000...', '{"cmd":"login",...')
+#1 [internal function]: Events::onMessage('7f0000010a8e000...', '{"cmd":"login"}')
+#2 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010a8e000...', '{"cmd":"login"}')
+#3 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2367): Workerman\Events\Select->loop()
+#6 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#7 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): GatewayWorker\BusinessWorker->run()
+#8 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#9 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /Users/gary/www/game/servers/php/start.php(38): Workerman\Worker::runAll()
+#12 {main}
+2019-09-08 08:20:13 pid:13372 Worker[13372] process terminated
+2019-09-08 08:20:14 pid:13369 TypeError: Argument 2 passed to GatewayWorker\Lib\Gateway::setSession() must be of the type array, string given, called in /Users/gary/www/game/servers/php/Applications/Gobang/Events.php on line 88 and defined in /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/Lib/Gateway.php:1045
+Stack trace:
+#0 /Users/gary/www/game/servers/php/Applications/Gobang/Events.php(88): GatewayWorker\Lib\Gateway::setSession('7f0000010a8f000...', '{"cmd":"login",...')
+#1 [internal function]: Events::onMessage('7f0000010a8f000...', '{"cmd":"login"}')
+#2 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010a8f000...', '{"cmd":"login"}')
+#3 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #49)
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2367): Workerman\Events\Select->loop()
+#6 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#7 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): GatewayWorker\BusinessWorker->run()
+#8 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#9 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /Users/gary/www/game/servers/php/start.php(38): Workerman\Worker::runAll()
+#12 {main}
+2019-09-08 08:20:14 pid:13369 Worker[13369] process terminated
+2019-09-08 08:20:29 pid:13375 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2019-09-08 08:20:29 pid:13376 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2019-09-08 08:20:29 pid:13375 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2019-09-08 08:20:29 pid:13376 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2019-09-08 08:20:36 pid:13368 worker[GobangBusinessWorker:13370] exit with status 11
+2019-09-08 08:20:38 pid:13368 worker[GobangBusinessWorker:13371] exit with status 11
+2019-09-08 08:20:38 pid:13368 Workerman[start.php] stopping ...
+2019-09-08 08:20:38 pid:13368 worker[GobangBusinessWorker:13372] exit with status 11
+2019-09-08 08:20:38 pid:13368 worker[GobangBusinessWorker:13369] exit with status 11
+2019-09-08 08:20:40 pid:13368 worker[GobangBusinessWorker:13487] exit with status 9
+2019-09-08 08:20:40 pid:13368 worker[GobangBusinessWorker:13484] exit with status 9
+2019-09-08 08:20:40 pid:13368 worker[Register:13377] exit with status 9
+2019-09-08 08:20:40 pid:13368 worker[GobangGateway:13376] exit with status 9
+2019-09-08 08:20:40 pid:13368 worker[GobangGateway:13375] exit with status 9
+2019-09-08 08:20:40 pid:13368 worker[GobangGateway:13374] exit with status 9
+2019-09-08 08:20:40 pid:13368 worker[GobangGateway:13373] exit with status 9
+2019-09-08 08:20:40 pid:13368 Workerman[start.php] has been stopped
+2019-09-08 08:20:42 pid:13500 Workerman[start.php] start in DEBUG mode
+2019-09-08 08:30:13 pid:13500 Workerman[start.php] stopping ...
+2019-09-08 08:30:15 pid:13500 worker[GobangBusinessWorker:13502] exit with status 9
+2019-09-08 08:30:15 pid:13500 worker[Register:13509] exit with status 9
+2019-09-08 08:30:15 pid:13500 worker[GobangGateway:13508] exit with status 9
+2019-09-08 08:30:15 pid:13500 worker[GobangGateway:13507] exit with status 9
+2019-09-08 08:30:15 pid:13500 worker[GobangGateway:13506] exit with status 9
+2019-09-08 08:30:15 pid:13500 worker[GobangGateway:13505] exit with status 9
+2019-09-08 08:30:15 pid:13500 worker[GobangBusinessWorker:13504] exit with status 9
+2019-09-08 08:30:15 pid:13500 worker[GobangBusinessWorker:13503] exit with status 9
+2019-09-08 08:30:15 pid:13500 worker[GobangBusinessWorker:13501] exit with status 9
+2019-09-08 08:30:15 pid:13500 Workerman[start.php] has been stopped
+2019-09-09 02:26:35 pid:14285 Workerman[start.php] start in DEBUG mode
+2019-09-09 03:19:06 pid:14285 Workerman[start.php] stopping ...
+2019-09-09 03:19:08 pid:14285 worker[GobangBusinessWorker:14290] exit with status 9
+2019-09-09 03:19:08 pid:14285 worker[GobangGateway:14292] exit with status 9
+2019-09-09 03:19:08 pid:14285 worker[Register:14296] exit with status 9
+2019-09-09 03:19:08 pid:14285 worker[GobangGateway:14295] exit with status 9
+2019-09-09 03:19:08 pid:14285 worker[GobangGateway:14294] exit with status 9
+2019-09-09 03:19:08 pid:14285 worker[GobangGateway:14293] exit with status 9
+2019-09-09 03:19:08 pid:14285 worker[GobangBusinessWorker:14291] exit with status 9
+2019-09-09 03:19:08 pid:14285 worker[GobangBusinessWorker:14289] exit with status 9
+2019-09-09 03:19:08 pid:14285 worker[GobangBusinessWorker:14288] exit with status 9
+2019-09-09 03:19:08 pid:14285 Workerman[start.php] has been stopped
+2019-09-09 03:19:17 pid:18200 Workerman[start.php] start in DEBUG mode
+2019-09-09 03:26:40 pid:18200 Workerman[start.php] stopping ...
+2019-09-09 03:26:42 pid:18200 worker[GobangGateway:18211] exit with status 9
+2019-09-09 03:26:42 pid:18200 worker[Register:18212] exit with status 9
+2019-09-09 03:26:42 pid:18200 worker[GobangGateway:18210] exit with status 9
+2019-09-09 03:26:42 pid:18200 worker[GobangGateway:18209] exit with status 9
+2019-09-09 03:26:42 pid:18200 worker[GobangGateway:18208] exit with status 9
+2019-09-09 03:26:42 pid:18200 worker[GobangBusinessWorker:18207] exit with status 9
+2019-09-09 03:26:42 pid:18200 worker[GobangBusinessWorker:18206] exit with status 9
+2019-09-09 03:26:42 pid:18200 worker[GobangBusinessWorker:18205] exit with status 9
+2019-09-09 03:26:42 pid:18200 worker[GobangBusinessWorker:18204] exit with status 9
+2019-09-09 03:26:42 pid:18200 Workerman[start.php] has been stopped
+2019-09-09 03:26:45 pid:19598 Workerman[start.php] start in DEBUG mode
+2019-09-09 06:33:53 pid:19598 Workerman[start.php] stopping ...
+2019-09-09 06:33:55 pid:19598 worker[GobangGateway:19606] exit with status 9
+2019-09-09 06:33:55 pid:19598 worker[GobangGateway:19608] exit with status 9
+2019-09-09 06:33:55 pid:19598 worker[Register:19609] exit with status 9
+2019-09-09 06:33:55 pid:19598 worker[GobangGateway:19607] exit with status 9
+2019-09-09 06:33:55 pid:19598 worker[GobangGateway:19605] exit with status 9
+2019-09-09 06:33:55 pid:19598 worker[GobangBusinessWorker:19604] exit with status 9
+2019-09-09 06:33:55 pid:19598 worker[GobangBusinessWorker:19603] exit with status 9
+2019-09-09 06:33:55 pid:19598 worker[GobangBusinessWorker:19602] exit with status 9
+2019-09-09 06:33:55 pid:19598 worker[GobangBusinessWorker:19601] exit with status 9
+2019-09-09 06:33:55 pid:19598 Workerman[start.php] has been stopped
+2019-09-09 06:33:58 pid:35156 Workerman[start.php] start in DEBUG mode
+2019-09-09 07:01:57 pid:35156 Workerman[start.php] stopping ...
+2019-09-09 07:01:59 pid:35156 worker[GobangBusinessWorker:35160] exit with status 9
+2019-09-09 07:01:59 pid:35156 worker[GobangBusinessWorker:35159] exit with status 9
+2019-09-09 07:01:59 pid:35156 worker[Register:35167] exit with status 9
+2019-09-09 07:01:59 pid:35156 worker[GobangGateway:35166] exit with status 9
+2019-09-09 07:01:59 pid:35156 worker[GobangGateway:35165] exit with status 9
+2019-09-09 07:01:59 pid:35156 worker[GobangGateway:35164] exit with status 9
+2019-09-09 07:01:59 pid:35156 worker[GobangGateway:35163] exit with status 9
+2019-09-09 07:01:59 pid:35156 worker[GobangBusinessWorker:35162] exit with status 9
+2019-09-09 07:01:59 pid:35156 worker[GobangBusinessWorker:35161] exit with status 9
+2019-09-09 07:01:59 pid:35156 Workerman[start.php] has been stopped
+2019-09-09 07:02:03 pid:40515 Workerman[start.php] start in DEBUG mode
+2019-09-09 07:03:21 pid:40515 Workerman[start.php] stopping ...
+2019-09-09 07:03:23 pid:40515 worker[GobangGateway:40522] exit with status 9
+2019-09-09 07:03:23 pid:40515 worker[GobangGateway:40523] exit with status 9
+2019-09-09 07:03:23 pid:40515 worker[Register:40524] exit with status 9
+2019-09-09 07:03:23 pid:40515 worker[GobangGateway:40521] exit with status 9
+2019-09-09 07:03:23 pid:40515 worker[GobangGateway:40520] exit with status 9
+2019-09-09 07:03:23 pid:40515 worker[GobangBusinessWorker:40519] exit with status 9
+2019-09-09 07:03:23 pid:40515 worker[GobangBusinessWorker:40518] exit with status 9
+2019-09-09 07:03:23 pid:40515 worker[GobangBusinessWorker:40517] exit with status 9
+2019-09-09 07:03:23 pid:40515 worker[GobangBusinessWorker:40516] exit with status 9
+2019-09-09 07:03:23 pid:40515 Workerman[start.php] has been stopped
+2019-09-09 07:03:25 pid:40791 Workerman[start.php] start in DEBUG mode
+2019-09-09 07:17:55 pid:40791 Workerman[start.php] stopping ...
+2019-09-09 07:17:57 pid:40791 worker[GobangGateway:40800] exit with status 9
+2019-09-09 07:17:57 pid:40791 worker[GobangBusinessWorker:40799] exit with status 9
+2019-09-09 07:17:57 pid:40791 worker[Register:40804] exit with status 9
+2019-09-09 07:17:57 pid:40791 worker[GobangGateway:40803] exit with status 9
+2019-09-09 07:17:57 pid:40791 worker[GobangGateway:40802] exit with status 9
+2019-09-09 07:17:57 pid:40791 worker[GobangGateway:40801] exit with status 9
+2019-09-09 07:17:57 pid:40791 worker[GobangBusinessWorker:40798] exit with status 9
+2019-09-09 07:17:57 pid:40791 worker[GobangBusinessWorker:40797] exit with status 9
+2019-09-09 07:17:57 pid:40791 worker[GobangBusinessWorker:40796] exit with status 9
+2019-09-09 07:17:57 pid:40791 Workerman[start.php] has been stopped
+2019-09-09 07:18:31 pid:43660 Workerman[start.php] start in DEBUG mode
+2019-09-09 07:18:48 pid:43665 Exception: can not connect to tcp://127.0.0.1:2703 Can't assign requested address in /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/Lib/Gateway.php:1143
+Stack trace:
+#0 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/Lib/Gateway.php(192): GatewayWorker\Lib\Gateway::sendAndRecv('127.0.0.1:2703', Array)
+#1 /Users/gary/www/game/servers/php/Applications/Gobang/Events.php(120): GatewayWorker\Lib\Gateway::isOnline('7f0000010a8f000...')
+#2 [internal function]: Events::onMessage('7f0000010a8f000...', '{"cmd":"ping","...')
+#3 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010a8f000...', '{"cmd":"ping","...')
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #48)
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2367): Workerman\Events\Select->loop()
+#7 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): GatewayWorker\BusinessWorker->run()
+#9 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /Users/gary/www/game/servers/php/start.php(38): Workerman\Worker::runAll()
+#13 {main}
+2019-09-09 07:18:48 pid:43665 Worker[43665] process terminated
+2019-09-09 07:18:49 pid:43663 Exception: can not connect to tcp://127.0.0.1:2701 Can't assign requested address in /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/Lib/Gateway.php:1143
+Stack trace:
+#0 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/Lib/Gateway.php(192): GatewayWorker\Lib\Gateway::sendAndRecv('127.0.0.1:2701', Array)
+#1 /Users/gary/www/game/servers/php/Applications/Gobang/Events.php(120): GatewayWorker\Lib\Gateway::isOnline('7f0000010a8d000...')
+#2 [internal function]: Events::onMessage('7f0000010a8f000...', '{"cmd":"ping","...')
+#3 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010a8f000...', '{"cmd":"ping","...')
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #48)
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2367): Workerman\Events\Select->loop()
+#7 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): GatewayWorker\BusinessWorker->run()
+#9 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /Users/gary/www/game/servers/php/start.php(38): Workerman\Worker::runAll()
+#13 {main}
+2019-09-09 07:18:49 pid:43663 Worker[43663] process terminated
+2019-09-09 07:18:54 pid:43664 Exception: can not connect to tcp://127.0.0.1:2703 Can't assign requested address in /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/Lib/Gateway.php:1143
+Stack trace:
+#0 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/Lib/Gateway.php(192): GatewayWorker\Lib\Gateway::sendAndRecv('127.0.0.1:2703', Array)
+#1 /Users/gary/www/game/servers/php/Applications/Gobang/Events.php(120): GatewayWorker\Lib\Gateway::isOnline('7f0000010a8f000...')
+#2 [internal function]: Events::onMessage('7f0000010a8f000...', '{"cmd":"ping","...')
+#3 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010a8f000...', '{"cmd":"ping","...')
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2367): Workerman\Events\Select->loop()
+#7 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): GatewayWorker\BusinessWorker->run()
+#9 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /Users/gary/www/game/servers/php/start.php(38): Workerman\Worker::runAll()
+#13 {main}
+2019-09-09 07:18:54 pid:43664 Worker[43664] process terminated
+2019-09-09 07:18:59 pid:43666 Exception: can not connect to tcp://127.0.0.1:2703 Can't assign requested address in /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/Lib/Gateway.php:1143
+Stack trace:
+#0 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/Lib/Gateway.php(192): GatewayWorker\Lib\Gateway::sendAndRecv('127.0.0.1:2703', Array)
+#1 /Users/gary/www/game/servers/php/Applications/Gobang/Events.php(120): GatewayWorker\Lib\Gateway::isOnline('7f0000010a8f000...')
+#2 [internal function]: Events::onMessage('7f0000010a8f000...', '{"cmd":"ping","...')
+#3 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010a8f000...', '{"cmd":"ping","...')
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2367): Workerman\Events\Select->loop()
+#7 /Users/gary/www/game/servers/php/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): GatewayWorker\BusinessWorker->run()
+#9 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /Users/gary/www/game/servers/php/start.php(38): Workerman\Worker::runAll()
+#13 {main}
+2019-09-09 07:18:59 pid:43666 Worker[43666] process terminated
+2019-09-09 07:19:05 pid:43670 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2019-09-09 07:19:05 pid:43670 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2019-09-09 07:19:18 pid:43660 worker[GobangBusinessWorker:43665] exit with status 11
+2019-09-09 07:19:19 pid:43660 worker[GobangBusinessWorker:43663] exit with status 11
+2019-09-09 07:19:24 pid:43660 worker[GobangBusinessWorker:43664] exit with status 11
+2019-09-09 07:19:29 pid:43660 worker[GobangBusinessWorker:43666] exit with status 11
+2019-09-09 07:19:45 pid:43660 Workerman[start.php] stopping ...
+2019-09-09 07:19:47 pid:43660 worker[GobangBusinessWorker:43855] exit with status 9
+2019-09-09 07:19:47 pid:43660 worker[GobangBusinessWorker:43836] exit with status 9
+2019-09-09 07:19:47 pid:43660 worker[GobangBusinessWorker:43822] exit with status 9
+2019-09-09 07:19:47 pid:43660 worker[GobangBusinessWorker:43819] exit with status 9
+2019-09-09 07:19:47 pid:43660 worker[GobangGateway:43670] exit with status 9
+2019-09-09 07:19:47 pid:43660 worker[Register:43671] exit with status 9
+2019-09-09 07:19:47 pid:43660 worker[GobangGateway:43669] exit with status 9
+2019-09-09 07:19:47 pid:43660 worker[GobangGateway:43668] exit with status 9
+2019-09-09 07:19:47 pid:43660 worker[GobangGateway:43667] exit with status 9
+2019-09-09 07:19:47 pid:43660 Workerman[start.php] has been stopped
+2019-09-09 07:19:53 pid:43927 Workerman[start.php] start in DEBUG mode
+2019-09-09 07:20:27 pid:43927 Workerman[start.php] stopping ...
+2019-09-09 07:20:29 pid:43927 worker[GobangGateway:43936] exit with status 9
+2019-09-09 07:20:29 pid:43927 worker[GobangGateway:43935] exit with status 9
+2019-09-09 07:20:29 pid:43927 worker[Register:43938] exit with status 9
+2019-09-09 07:20:29 pid:43927 worker[GobangGateway:43937] exit with status 9
+2019-09-09 07:20:29 pid:43927 worker[GobangGateway:43934] exit with status 9
+2019-09-09 07:20:29 pid:43927 worker[GobangBusinessWorker:43933] exit with status 9
+2019-09-09 07:20:29 pid:43927 worker[GobangBusinessWorker:43932] exit with status 9
+2019-09-09 07:20:29 pid:43927 worker[GobangBusinessWorker:43931] exit with status 9
+2019-09-09 07:20:29 pid:43927 worker[GobangBusinessWorker:43930] exit with status 9
+2019-09-09 07:20:29 pid:43927 Workerman[start.php] has been stopped
+2019-09-09 07:21:18 pid:44195 Workerman[start.php] start in DEBUG mode
+2019-09-09 07:28:50 pid:44195 Workerman[start.php] stopping ...
+2019-09-09 07:28:52 pid:44195 worker[GobangGateway:44203] exit with status 9
+2019-09-09 07:28:52 pid:44195 worker[GobangGateway:44205] exit with status 9
+2019-09-09 07:28:52 pid:44195 worker[Register:44206] exit with status 9
+2019-09-09 07:28:52 pid:44195 worker[GobangGateway:44204] exit with status 9
+2019-09-09 07:28:52 pid:44195 worker[GobangGateway:44202] exit with status 9
+2019-09-09 07:28:52 pid:44195 worker[GobangBusinessWorker:44201] exit with status 9
+2019-09-09 07:28:52 pid:44195 worker[GobangBusinessWorker:44200] exit with status 9
+2019-09-09 07:28:52 pid:44195 worker[GobangBusinessWorker:44199] exit with status 9
+2019-09-09 07:28:52 pid:44195 worker[GobangBusinessWorker:44198] exit with status 9
+2019-09-09 07:28:52 pid:44195 Workerman[start.php] has been stopped
+2019-09-09 07:28:54 pid:45646 Workerman[start.php] start in DEBUG mode
+2019-09-09 07:38:07 pid:45646 Workerman[start.php] stopping ...
+2019-09-09 07:38:09 pid:45646 worker[GobangBusinessWorker:45647] exit with status 9
+2019-09-09 07:38:10 pid:45646 worker[GobangBusinessWorker:45650] exit with status 9
+2019-09-09 07:38:10 pid:45646 worker[GobangGateway:45651] exit with status 9
+2019-09-09 07:38:10 pid:45646 worker[Register:45655] exit with status 9
+2019-09-09 07:38:10 pid:45646 worker[GobangGateway:45654] exit with status 9
+2019-09-09 07:38:10 pid:45646 worker[GobangGateway:45653] exit with status 9
+2019-09-09 07:38:10 pid:45646 worker[GobangGateway:45652] exit with status 9
+2019-09-09 07:38:10 pid:45646 worker[GobangBusinessWorker:45649] exit with status 9
+2019-09-09 07:38:10 pid:45646 worker[GobangBusinessWorker:45648] exit with status 9
+2019-09-09 07:38:10 pid:45646 Workerman[start.php] has been stopped
+2019-09-09 07:38:11 pid:47438 Workerman[start.php] start in DEBUG mode
+2019-09-09 07:45:58 pid:47438 Workerman[start.php] stopping ...
+2019-09-09 07:46:00 pid:47438 worker[GobangBusinessWorker:47443] exit with status 9
+2019-09-09 07:46:00 pid:47438 worker[GobangBusinessWorker:47445] exit with status 9
+2019-09-09 07:46:00 pid:47438 worker[Register:47451] exit with status 9
+2019-09-09 07:46:00 pid:47438 worker[GobangGateway:47450] exit with status 9
+2019-09-09 07:46:00 pid:47438 worker[GobangGateway:47449] exit with status 9
+2019-09-09 07:46:00 pid:47438 worker[GobangGateway:47448] exit with status 9
+2019-09-09 07:46:00 pid:47438 worker[GobangGateway:47447] exit with status 9
+2019-09-09 07:46:00 pid:47438 worker[GobangBusinessWorker:47446] exit with status 9
+2019-09-09 07:46:00 pid:47438 worker[GobangBusinessWorker:47444] exit with status 9
+2019-09-09 07:46:00 pid:47438 Workerman[start.php] has been stopped
+2019-09-09 07:46:03 pid:48949 Workerman[start.php] start in DEBUG mode
+2019-09-09 09:04:23 pid:48949 Workerman[start.php] stopping ...
+2019-09-09 09:04:25 pid:48949 worker[GobangGateway:48964] exit with status 9
+2019-09-09 09:04:25 pid:48949 worker[Register:48968] exit with status 9
+2019-09-09 09:04:25 pid:48949 worker[GobangGateway:48967] exit with status 9
+2019-09-09 09:04:25 pid:48949 worker[GobangGateway:48966] exit with status 9
+2019-09-09 09:04:25 pid:48949 worker[GobangGateway:48965] exit with status 9
+2019-09-09 09:04:25 pid:48949 worker[GobangBusinessWorker:48963] exit with status 9
+2019-09-09 09:04:25 pid:48949 worker[GobangBusinessWorker:48962] exit with status 9
+2019-09-09 09:04:25 pid:48949 worker[GobangBusinessWorker:48961] exit with status 9
+2019-09-09 09:04:25 pid:48949 worker[GobangBusinessWorker:48960] exit with status 9
+2019-09-09 09:04:25 pid:48949 Workerman[start.php] has been stopped
+2019-09-09 09:04:28 pid:63745 Workerman[start.php] start in DEBUG mode
+2019-09-09 09:15:39 pid:63745 Workerman[start.php] stopping ...
+2019-09-09 09:15:41 pid:63745 worker[GobangGateway:63754] exit with status 9
+2019-09-09 09:15:41 pid:63745 worker[Register:63756] exit with status 9
+2019-09-09 09:15:41 pid:63745 worker[GobangGateway:63755] exit with status 9
+2019-09-09 09:15:41 pid:63745 worker[GobangGateway:63753] exit with status 9
+2019-09-09 09:15:41 pid:63745 worker[GobangGateway:63752] exit with status 9
+2019-09-09 09:15:41 pid:63745 worker[GobangBusinessWorker:63751] exit with status 9
+2019-09-09 09:15:41 pid:63745 worker[GobangBusinessWorker:63750] exit with status 9
+2019-09-09 09:15:41 pid:63745 worker[GobangBusinessWorker:63749] exit with status 9
+2019-09-09 09:15:41 pid:63745 worker[GobangBusinessWorker:63748] exit with status 9
+2019-09-09 09:15:41 pid:63745 Workerman[start.php] has been stopped
+2019-09-09 09:15:44 pid:65891 Workerman[start.php] start in DEBUG mode
+2019-09-09 09:27:21 pid:65891 Workerman[start.php] stopping ...
+2019-09-09 09:27:24 pid:65891 worker[GobangBusinessWorker:65892] exit with status 9
+2019-09-09 09:27:24 pid:65891 worker[GobangGateway:65896] exit with status 9
+2019-09-09 09:27:24 pid:65891 worker[GobangBusinessWorker:65895] exit with status 9
+2019-09-09 09:27:24 pid:65891 worker[GobangBusinessWorker:65894] exit with status 9
+2019-09-09 09:27:24 pid:65891 worker[GobangBusinessWorker:65893] exit with status 9
+2019-09-09 09:27:25 pid:65891 worker[Register:65900] exit with status 9
+2019-09-09 09:27:25 pid:65891 worker[GobangGateway:65899] exit with status 9
+2019-09-09 09:27:25 pid:65891 worker[GobangGateway:65898] exit with status 9
+2019-09-09 09:27:25 pid:65891 worker[GobangGateway:65897] exit with status 9
+2019-09-09 09:27:25 pid:65891 Workerman[start.php] has been stopped
+2019-09-09 09:29:17 pid:68443 Workerman[start.php] start in DEBUG mode
+2019-09-09 09:29:21 pid:68443 Workerman[start.php] stopping ...
+2019-09-09 09:29:23 pid:68443 worker[GobangBusinessWorker:68449] exit with status 9
+2019-09-09 09:29:23 pid:68443 worker[GobangGateway:68451] exit with status 9
+2019-09-09 09:29:23 pid:68443 worker[Register:68454] exit with status 9
+2019-09-09 09:29:23 pid:68443 worker[GobangGateway:68453] exit with status 9
+2019-09-09 09:29:23 pid:68443 worker[GobangGateway:68452] exit with status 9
+2019-09-09 09:29:23 pid:68443 worker[GobangGateway:68450] exit with status 9
+2019-09-09 09:29:23 pid:68443 worker[GobangBusinessWorker:68448] exit with status 9
+2019-09-09 09:29:23 pid:68443 worker[GobangBusinessWorker:68447] exit with status 9
+2019-09-09 09:29:23 pid:68443 worker[GobangBusinessWorker:68446] exit with status 9
+2019-09-09 09:29:23 pid:68443 Workerman[start.php] has been stopped
+2019-09-09 09:29:31 pid:68503 Workerman[start.php] start in DEBUG mode
+2019-09-09 09:36:13 pid:68503 Workerman[start.php] stopping ...
+2019-09-09 09:36:15 pid:68503 worker[GobangBusinessWorker:68509] exit with status 9
+2019-09-09 09:36:15 pid:68503 worker[Register:68514] exit with status 9
+2019-09-09 09:36:15 pid:68503 worker[GobangGateway:68513] exit with status 9
+2019-09-09 09:36:15 pid:68503 worker[GobangGateway:68512] exit with status 9
+2019-09-09 09:36:15 pid:68503 worker[GobangGateway:68511] exit with status 9
+2019-09-09 09:36:15 pid:68503 worker[GobangGateway:68510] exit with status 9
+2019-09-09 09:36:15 pid:68503 worker[GobangBusinessWorker:68508] exit with status 9
+2019-09-09 09:36:15 pid:68503 worker[GobangBusinessWorker:68507] exit with status 9
+2019-09-09 09:36:15 pid:68503 worker[GobangBusinessWorker:68506] exit with status 9
+2019-09-09 09:36:15 pid:68503 Workerman[start.php] has been stopped
+2019-09-09 09:36:18 pid:69816 Workerman[start.php] start in DEBUG mode
+2019-09-09 09:37:07 pid:69816 Workerman[start.php] stopping ...
+2019-09-09 09:37:09 pid:69816 worker[GobangGateway:69823] exit with status 9
+2019-09-09 09:37:09 pid:69816 worker[GobangGateway:69824] exit with status 9
+2019-09-09 09:37:09 pid:69816 worker[Register:69827] exit with status 9
+2019-09-09 09:37:09 pid:69816 worker[GobangGateway:69826] exit with status 9
+2019-09-09 09:37:09 pid:69816 worker[GobangGateway:69825] exit with status 9
+2019-09-09 09:37:09 pid:69816 worker[GobangBusinessWorker:69822] exit with status 9
+2019-09-09 09:37:09 pid:69816 worker[GobangBusinessWorker:69821] exit with status 9
+2019-09-09 09:37:09 pid:69816 worker[GobangBusinessWorker:69820] exit with status 9
+2019-09-09 09:37:09 pid:69816 worker[GobangBusinessWorker:69819] exit with status 9
+2019-09-09 09:37:09 pid:69816 Workerman[start.php] has been stopped
+2019-09-09 09:37:11 pid:69986 Workerman[start.php] start in DEBUG mode
+2019-09-09 09:52:33 pid:69986 Workerman[start.php] stopping ...
+2019-09-09 09:52:35 pid:69986 worker[GobangGateway:69996] exit with status 9
+2019-09-09 09:52:35 pid:69986 worker[GobangGateway:69995] exit with status 9
+2019-09-09 09:52:35 pid:69986 worker[GobangGateway:69994] exit with status 9
+2019-09-09 09:52:35 pid:69986 worker[Register:69997] exit with status 9
+2019-09-09 09:52:35 pid:69986 worker[GobangGateway:69993] exit with status 9
+2019-09-09 09:52:35 pid:69986 worker[GobangBusinessWorker:69992] exit with status 9
+2019-09-09 09:52:35 pid:69986 worker[GobangBusinessWorker:69991] exit with status 9
+2019-09-09 09:52:35 pid:69986 worker[GobangBusinessWorker:69990] exit with status 9
+2019-09-09 09:52:35 pid:69986 worker[GobangBusinessWorker:69989] exit with status 9
+2019-09-09 09:52:35 pid:69986 Workerman[start.php] has been stopped
+2019-09-09 09:52:38 pid:72935 Workerman[start.php] start in DEBUG mode
+2019-09-09 09:58:12 pid:72935 Workerman[start.php] stopping ...
+2019-09-09 09:58:14 pid:72935 worker[GobangGateway:72944] exit with status 9
+2019-09-09 09:58:14 pid:72935 worker[Register:72946] exit with status 9
+2019-09-09 09:58:14 pid:72935 worker[GobangGateway:72945] exit with status 9
+2019-09-09 09:58:14 pid:72935 worker[GobangGateway:72943] exit with status 9
+2019-09-09 09:58:14 pid:72935 worker[GobangGateway:72942] exit with status 9
+2019-09-09 09:58:14 pid:72935 worker[GobangBusinessWorker:72941] exit with status 9
+2019-09-09 09:58:14 pid:72935 worker[GobangBusinessWorker:72940] exit with status 9
+2019-09-09 09:58:14 pid:72935 worker[GobangBusinessWorker:72939] exit with status 9
+2019-09-09 09:58:14 pid:72935 worker[GobangBusinessWorker:72938] exit with status 9
+2019-09-09 09:58:14 pid:72935 Workerman[start.php] has been stopped
+2019-09-09 09:58:21 pid:74055 Workerman[start.php] start in DEBUG mode
+2019-09-09 09:59:44 pid:74055 Workerman[start.php] stopping ...
+2019-09-09 09:59:46 pid:74055 worker[GobangBusinessWorker:74058] exit with status 9
+2019-09-09 09:59:46 pid:74055 worker[Register:74064] exit with status 9
+2019-09-09 09:59:46 pid:74055 worker[GobangGateway:74063] exit with status 9
+2019-09-09 09:59:46 pid:74055 worker[GobangGateway:74062] exit with status 9
+2019-09-09 09:59:46 pid:74055 worker[GobangGateway:74061] exit with status 9
+2019-09-09 09:59:46 pid:74055 worker[GobangGateway:74060] exit with status 9
+2019-09-09 09:59:46 pid:74055 worker[GobangBusinessWorker:74059] exit with status 9
+2019-09-09 09:59:46 pid:74055 worker[GobangBusinessWorker:74057] exit with status 9
+2019-09-09 09:59:46 pid:74055 worker[GobangBusinessWorker:74056] exit with status 9
+2019-09-09 09:59:46 pid:74055 Workerman[start.php] has been stopped
+2019-09-09 09:59:48 pid:74332 Workerman[start.php] start in DEBUG mode
+2019-09-09 10:18:52 pid:74332 Workerman[start.php] stopping ...
+2019-09-09 10:18:54 pid:74332 worker[GobangBusinessWorker:74336] exit with status 9
+2019-09-09 10:18:54 pid:74332 worker[Register:74341] exit with status 9
+2019-09-09 10:18:54 pid:74332 worker[GobangGateway:74340] exit with status 9
+2019-09-09 10:18:54 pid:74332 worker[GobangGateway:74339] exit with status 9
+2019-09-09 10:18:54 pid:74332 worker[GobangGateway:74338] exit with status 9
+2019-09-09 10:18:54 pid:74332 worker[GobangGateway:74337] exit with status 9
+2019-09-09 10:18:54 pid:74332 worker[GobangBusinessWorker:74335] exit with status 9
+2019-09-09 10:18:54 pid:74332 worker[GobangBusinessWorker:74334] exit with status 9
+2019-09-09 10:18:54 pid:74332 worker[GobangBusinessWorker:74333] exit with status 9
+2019-09-09 10:18:54 pid:74332 Workerman[start.php] has been stopped
+2019-09-09 10:18:57 pid:77948 Workerman[start.php] start in DEBUG mode
+2019-09-09 10:30:32 pid:77948 Workerman[start.php] stopping ...
+2019-09-09 10:30:34 pid:77948 worker[GobangBusinessWorker:77952] exit with status 9
+2019-09-09 10:30:34 pid:77948 worker[GobangGateway:77955] exit with status 9
+2019-09-09 10:30:34 pid:77948 worker[GobangGateway:77954] exit with status 9
+2019-09-09 10:30:34 pid:77948 worker[Register:77957] exit with status 9
+2019-09-09 10:30:34 pid:77948 worker[GobangGateway:77956] exit with status 9
+2019-09-09 10:30:34 pid:77948 worker[GobangGateway:77953] exit with status 9
+2019-09-09 10:30:34 pid:77948 worker[GobangBusinessWorker:77951] exit with status 9
+2019-09-09 10:30:34 pid:77948 worker[GobangBusinessWorker:77950] exit with status 9
+2019-09-09 10:30:34 pid:77948 worker[GobangBusinessWorker:77949] exit with status 9
+2019-09-09 10:30:34 pid:77948 Workerman[start.php] has been stopped
+2019-09-09 10:32:05 pid:80410 Workerman[start.php] start in DEBUG mode
+2019-09-09 10:44:51 pid:80410 Workerman[start.php] stopping ...
+2019-09-09 10:44:53 pid:80410 worker[GobangBusinessWorker:80413] exit with status 9
+2019-09-09 10:44:53 pid:80410 worker[GobangBusinessWorker:80412] exit with status 9
+2019-09-09 10:44:53 pid:80410 worker[GobangGateway:80417] exit with status 9
+2019-09-09 10:44:53 pid:80410 worker[GobangGateway:80418] exit with status 9
+2019-09-09 10:44:53 pid:80410 worker[Register:80419] exit with status 9
+2019-09-09 10:44:53 pid:80410 worker[GobangGateway:80416] exit with status 9
+2019-09-09 10:44:53 pid:80410 worker[GobangGateway:80415] exit with status 9
+2019-09-09 10:44:53 pid:80410 worker[GobangBusinessWorker:80414] exit with status 9
+2019-09-09 10:44:53 pid:80410 worker[GobangBusinessWorker:80411] exit with status 9
+2019-09-09 10:44:53 pid:80410 Workerman[start.php] has been stopped
+2019-09-09 10:45:00 pid:82904 Workerman[start.php] start in DEBUG mode
+2019-09-09 10:52:38 pid:82904 Workerman[start.php] stopping ...
+2019-09-09 10:52:40 pid:82904 worker[GobangGateway:82912] exit with status 9
+2019-09-09 10:52:40 pid:82904 worker[GobangGateway:82914] exit with status 9
+2019-09-09 10:52:40 pid:82904 worker[GobangGateway:82913] exit with status 9
+2019-09-09 10:52:40 pid:82904 worker[GobangGateway:82911] exit with status 9
+2019-09-09 10:52:40 pid:82904 worker[Register:82915] exit with status 9
+2019-09-09 10:52:40 pid:82904 worker[GobangBusinessWorker:82910] exit with status 9
+2019-09-09 10:52:40 pid:82904 worker[GobangBusinessWorker:82909] exit with status 9
+2019-09-09 10:52:40 pid:82904 worker[GobangBusinessWorker:82908] exit with status 9
+2019-09-09 10:52:40 pid:82904 worker[GobangBusinessWorker:82907] exit with status 9
+2019-09-09 10:52:40 pid:82904 Workerman[start.php] has been stopped
+2019-09-09 10:53:19 pid:84450 Workerman[start.php] start in DEBUG mode
+2019-09-09 10:54:44 pid:84450 Workerman[start.php] stopping ...
+2019-09-09 10:54:46 pid:84450 worker[GobangGateway:84458] exit with status 9
+2019-09-09 10:54:46 pid:84450 worker[GobangGateway:84459] exit with status 9
+2019-09-09 10:54:46 pid:84450 worker[Register:84461] exit with status 9
+2019-09-09 10:54:46 pid:84450 worker[GobangGateway:84460] exit with status 9
+2019-09-09 10:54:46 pid:84450 worker[GobangGateway:84457] exit with status 9
+2019-09-09 10:54:46 pid:84450 worker[GobangBusinessWorker:84456] exit with status 9
+2019-09-09 10:54:46 pid:84450 worker[GobangBusinessWorker:84455] exit with status 9
+2019-09-09 10:54:46 pid:84450 worker[GobangBusinessWorker:84454] exit with status 9
+2019-09-09 10:54:46 pid:84450 worker[GobangBusinessWorker:84453] exit with status 9
+2019-09-09 10:54:46 pid:84450 Workerman[start.php] has been stopped
+2019-09-09 10:54:55 pid:84809 Workerman[start.php] start in DEBUG mode
+2019-09-09 10:57:27 pid:84809 Workerman[start.php] stopping ...
+2019-09-09 10:57:29 pid:84809 worker[GobangBusinessWorker:84813] exit with status 9
+2019-09-09 10:57:29 pid:84809 worker[GobangBusinessWorker:84812] exit with status 9
+2019-09-09 10:57:29 pid:84809 worker[Register:84818] exit with status 9
+2019-09-09 10:57:29 pid:84809 worker[GobangGateway:84817] exit with status 9
+2019-09-09 10:57:29 pid:84809 worker[GobangGateway:84816] exit with status 9
+2019-09-09 10:57:29 pid:84809 worker[GobangGateway:84815] exit with status 9
+2019-09-09 10:57:29 pid:84809 worker[GobangGateway:84814] exit with status 9
+2019-09-09 10:57:29 pid:84809 worker[GobangBusinessWorker:84811] exit with status 9
+2019-09-09 10:57:29 pid:84809 worker[GobangBusinessWorker:84810] exit with status 9
+2019-09-09 10:57:29 pid:84809 Workerman[start.php] has been stopped
+2019-09-10 06:11:09 pid:16512 Workerman[start.php] start in DEBUG mode
+2019-09-10 07:04:04 pid:16512 Workerman[start.php] stopping ...
+2019-09-10 07:04:06 pid:16512 worker[GobangGateway:16522] exit with status 9
+2019-09-10 07:04:06 pid:16512 worker[Register:16523] exit with status 9
+2019-09-10 07:04:06 pid:16512 worker[GobangGateway:16521] exit with status 9
+2019-09-10 07:04:06 pid:16512 worker[GobangGateway:16520] exit with status 9
+2019-09-10 07:04:06 pid:16512 worker[GobangGateway:16519] exit with status 9
+2019-09-10 07:04:06 pid:16512 worker[GobangBusinessWorker:16518] exit with status 9
+2019-09-10 07:04:06 pid:16512 worker[GobangBusinessWorker:16517] exit with status 9
+2019-09-10 07:04:06 pid:16512 worker[GobangBusinessWorker:16516] exit with status 9
+2019-09-10 07:04:06 pid:16512 worker[GobangBusinessWorker:16515] exit with status 9
+2019-09-10 07:04:06 pid:16512 Workerman[start.php] has been stopped
+2019-09-10 07:04:08 pid:26586 Workerman[start.php] start in DEBUG mode
+2019-09-10 07:15:05 pid:26586 Workerman[start.php] stopping ...
+2019-09-10 07:15:07 pid:26586 worker[GobangGateway:26594] exit with status 9
+2019-09-10 07:15:07 pid:26586 worker[Register:26595] exit with status 9
+2019-09-10 07:15:07 pid:26586 worker[GobangGateway:26593] exit with status 9
+2019-09-10 07:15:07 pid:26586 worker[GobangGateway:26592] exit with status 9
+2019-09-10 07:15:07 pid:26586 worker[GobangGateway:26591] exit with status 9
+2019-09-10 07:15:07 pid:26586 worker[GobangBusinessWorker:26590] exit with status 9
+2019-09-10 07:15:07 pid:26586 worker[GobangBusinessWorker:26589] exit with status 9
+2019-09-10 07:15:07 pid:26586 worker[GobangBusinessWorker:26588] exit with status 9
+2019-09-10 07:15:07 pid:26586 worker[GobangBusinessWorker:26587] exit with status 9
+2019-09-10 07:15:07 pid:26586 Workerman[start.php] has been stopped
+2019-09-10 07:15:18 pid:28738 Workerman[start.php] start in DEBUG mode
+2019-09-11 02:13:53 pid:13243 Workerman[start.php] start in DEBUG mode
+2019-09-11 02:13:55 pid:13243 Workerman[start.php] stopping ...
+2019-09-11 02:13:58 pid:13243 worker[GobangGateway:13250] exit with status 9
+2019-09-11 02:13:58 pid:13243 worker[GobangGateway:13251] exit with status 9
+2019-09-11 02:13:58 pid:13243 worker[Register:13252] exit with status 9
+2019-09-11 02:13:58 pid:13243 worker[GobangGateway:13249] exit with status 9
+2019-09-11 02:13:58 pid:13243 worker[GobangGateway:13248] exit with status 9
+2019-09-11 02:13:58 pid:13243 worker[GobangBusinessWorker:13247] exit with status 9
+2019-09-11 02:13:58 pid:13243 worker[GobangBusinessWorker:13246] exit with status 9
+2019-09-11 02:13:58 pid:13243 worker[GobangBusinessWorker:13245] exit with status 9
+2019-09-11 02:13:58 pid:13243 worker[GobangBusinessWorker:13244] exit with status 9
+2019-09-11 02:13:58 pid:13243 Workerman[start.php] has been stopped
+2019-09-12 01:18:55 pid:1656 Workerman[start.php] start in DEBUG mode
+2019-09-12 01:24:09 pid:1656 Workerman[start.php] stopping ...
+2019-09-12 01:24:11 pid:1656 worker[GobangGateway:1667] exit with status 9
+2019-09-12 01:24:11 pid:1656 worker[Register:1671] exit with status 9
+2019-09-12 01:24:11 pid:1656 worker[GobangGateway:1670] exit with status 9
+2019-09-12 01:24:11 pid:1656 worker[GobangGateway:1669] exit with status 9
+2019-09-12 01:24:11 pid:1656 worker[GobangGateway:1668] exit with status 9
+2019-09-12 01:24:11 pid:1656 worker[GobangBusinessWorker:1666] exit with status 9
+2019-09-12 01:24:11 pid:1656 worker[GobangBusinessWorker:1665] exit with status 9
+2019-09-12 01:24:11 pid:1656 worker[GobangBusinessWorker:1664] exit with status 9
+2019-09-12 01:24:11 pid:1656 worker[GobangBusinessWorker:1663] exit with status 9
+2019-09-12 01:24:11 pid:1656 Workerman[start.php] has been stopped
+2019-09-16 08:31:20 pid:50012 Workerman[start.php] start in DEBUG mode
+2019-09-16 10:32:19 pid:50012 Workerman[start.php] stopping ...
+2019-09-16 10:32:21 pid:50012 worker[GobangGateway:50020] exit with status 9
+2019-09-16 10:32:21 pid:50012 worker[GobangGateway:50019] exit with status 9
+2019-09-16 10:32:21 pid:50012 worker[Register:50023] exit with status 9
+2019-09-16 10:32:21 pid:50012 worker[GobangGateway:50022] exit with status 9
+2019-09-16 10:32:21 pid:50012 worker[GobangGateway:50021] exit with status 9
+2019-09-16 10:32:21 pid:50012 worker[GobangBusinessWorker:50018] exit with status 9
+2019-09-16 10:32:21 pid:50012 worker[GobangBusinessWorker:50017] exit with status 9
+2019-09-16 10:32:21 pid:50012 worker[GobangBusinessWorker:50016] exit with status 9
+2019-09-16 10:32:21 pid:50012 worker[GobangBusinessWorker:50015] exit with status 9
+2019-09-16 10:32:21 pid:50012 Workerman[start.php] has been stopped

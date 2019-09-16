@@ -1,0 +1,17 @@
+{
+    "name"  : "workerman/workerman-gobang",
+    "type"  : "project",
+    "keywords": ["fame"],
+    "homepage": "http://www.workerman.net",
+    "license" : "MIT",
+    "require": {
+        "workerman/gateway-worker" : ">=3.0.0",
+        "wuti/wuti": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/LzyZone/wuti.git"
+        }
+    ]
+}
