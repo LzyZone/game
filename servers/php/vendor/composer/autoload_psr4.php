@@ -9,5 +9,9 @@ return array(
     'WuTi\\Library\\' => array($vendorDir . '/wuti/wuti/Library'),
     'WuTi\\' => array($vendorDir . '/wuti/wuti'),
     'Workerman\\' => array($vendorDir . '/workerman/workerman'),
+    'Protocols\\' => array($baseDir . '/Applications/Rpc/Protocols'),
+    'Model\\' => array($baseDir . '/Applications/Rpc/Model'),
+    'Lib\\' => array($baseDir . '/Applications/Rpc/Lib'),
     'GatewayWorker\\' => array($vendorDir . '/workerman/gateway-worker/src'),
+    'GPBMetadata\\' => array($baseDir . '/Applications/Rpc/GPBMetadata'),
 );

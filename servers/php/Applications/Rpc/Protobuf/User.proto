@@ -1,0 +1,17 @@
+syntax = "proto3";
+package Lib.User;
+
+message LoginRequest {
+    string username = 0x1;
+    string password = 0x2;
+}
+
+message LoginResponse{
+    uint32 id = 0x1;
+    string username = 0x2;
+    string token = 0x3;
+}
+
+service UserService{
+    rpc Login(LoginRequest)returns(LoginResponse);
+}

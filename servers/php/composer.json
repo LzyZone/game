@@ -13,5 +13,13 @@
             "type": "vcs",
             "url":  "https://github.com/LzyZone/wuti.git"
         }
-    ]
+    ],
+    "autoload":{
+        "psr-4": {
+            "Protocols\\": "Applications/Rpc/Protocols/",
+            "Lib\\": "Applications/Rpc/Lib/",
+            "Model\\": "Applications/Rpc/Model/",
+            "GPBMetadata\\": "Applications/Rpc/GPBMetadata"
+        }
+    }
 }

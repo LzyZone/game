@@ -1,0 +1,8 @@
+syntax = "proto3";
+package Lib;
+
+message RpcError {
+    int32 code = 0x1;
+    string message = 0x2;
+}
+

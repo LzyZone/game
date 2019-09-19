@@ -934,3 +934,375 @@ Stack trace:
 2019-09-16 10:32:21 pid:50012 worker[GobangBusinessWorker:50016] exit with status 9
 2019-09-16 10:32:21 pid:50012 worker[GobangBusinessWorker:50015] exit with status 9
 2019-09-16 10:32:21 pid:50012 Workerman[start.php] has been stopped
+2019-09-19 02:01:09 pid:17514 Workerman[start.php] start in DEBUG mode
+2019-09-19 02:03:35 pid:17989 Workerman[start.php] start in DEBUG mode
+2019-09-19 02:03:35 pid:17989 Workerman[start.php] already running
+2019-09-19 05:35:03 pid:17514 Workerman[start.php] stopping ...
+2019-09-19 05:35:05 pid:17514 worker[none:17519] exit with status 9
+2019-09-19 05:35:05 pid:17514 worker[none:17520] exit with status 9
+2019-09-19 05:35:05 pid:17514 worker[none:17518] exit with status 9
+2019-09-19 05:35:05 pid:17514 worker[none:17517] exit with status 9
+2019-09-19 05:35:05 pid:17514 Workerman[start.php] has been stopped
+2019-09-19 05:35:08 pid:22015 Workerman[start.php] start in DEBUG mode
+2019-09-19 05:39:09 pid:22015 Workerman[start.php] stopping ...
+2019-09-19 05:39:11 pid:22015 worker[none:22017] exit with status 9
+2019-09-19 05:39:11 pid:22015 worker[none:22019] exit with status 9
+2019-09-19 05:39:11 pid:22015 worker[none:22018] exit with status 9
+2019-09-19 05:39:11 pid:22015 worker[none:22016] exit with status 9
+2019-09-19 05:39:11 pid:22015 Workerman[start.php] has been stopped
+2019-09-19 05:39:13 pid:22772 Workerman[start.php] start in DEBUG mode
+2019-09-19 05:43:09 pid:22772 Workerman[start.php] stopping ...
+2019-09-19 05:43:11 pid:22772 worker[none:22775] exit with status 9
+2019-09-19 05:43:11 pid:22772 worker[none:22776] exit with status 9
+2019-09-19 05:43:11 pid:22772 worker[none:22774] exit with status 9
+2019-09-19 05:43:11 pid:22772 worker[none:22773] exit with status 9
+2019-09-19 05:43:11 pid:22772 Workerman[start.php] has been stopped
+2019-09-19 05:43:13 pid:23590 Workerman[start.php] start in DEBUG mode
+2019-09-19 06:01:37 pid:23590 Workerman[start.php] stopping ...
+2019-09-19 06:01:39 pid:23590 worker[none:23594] exit with status 9
+2019-09-19 06:01:39 pid:23590 worker[none:23596] exit with status 9
+2019-09-19 06:01:39 pid:23590 worker[none:23595] exit with status 9
+2019-09-19 06:01:39 pid:23590 worker[none:23593] exit with status 9
+2019-09-19 06:01:39 pid:23590 Workerman[start.php] has been stopped
+2019-09-19 06:01:50 pid:27366 Workerman[start.php] start in DEBUG mode
+2019-09-19 06:05:30 pid:27366 Workerman[start.php] stopping ...
+2019-09-19 06:05:32 pid:27366 worker[none:27369] exit with status 9
+2019-09-19 06:05:32 pid:27366 worker[none:27370] exit with status 9
+2019-09-19 06:05:32 pid:27366 worker[none:27368] exit with status 9
+2019-09-19 06:05:32 pid:27366 worker[none:27367] exit with status 9
+2019-09-19 06:05:32 pid:27366 Workerman[start.php] has been stopped
+2019-09-19 06:05:34 pid:28101 Workerman[start.php] start in DEBUG mode
+2019-09-19 06:11:04 pid:28104 Error: Call to undefined method Lib\User\LoginRequest::parseFromStream() in /Users/gary/www/game/servers/php/Applications/Rpc/start.php:14
+Stack trace:
+#0 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), 'register\n\x05admin...')
+#1 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #28)
+#2 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2382): Workerman\Events\Select->loop()
+#3 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): Workerman\Worker->run()
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#7 /Users/gary/www/game/servers/php/Applications/Rpc/start.php(23): Workerman\Worker::runAll()
+#8 {main}
+2019-09-19 06:11:04 pid:28104 Worker[28104] process terminated
+2019-09-19 06:11:15 pid:28107 Error: Call to undefined method Lib\User\LoginRequest::parseFromStream() in /Users/gary/www/game/servers/php/Applications/Rpc/start.php:14
+Stack trace:
+#0 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), 'register\n\x05admin...')
+#1 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#2 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2382): Workerman\Events\Select->loop()
+#3 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): Workerman\Worker->run()
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#7 /Users/gary/www/game/servers/php/Applications/Rpc/start.php(23): Workerman\Worker::runAll()
+#8 {main}
+2019-09-19 06:11:15 pid:28107 Worker[28107] process terminated
+2019-09-19 06:11:46 pid:28105 Error: Call to undefined method Lib\User\LoginRequest::parseFromStream() in /Users/gary/www/game/servers/php/Applications/Rpc/start.php:14
+Stack trace:
+#0 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), 'register\n\x05admin...')
+#1 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #29)
+#2 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2382): Workerman\Events\Select->loop()
+#3 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): Workerman\Worker->run()
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#7 /Users/gary/www/game/servers/php/Applications/Rpc/start.php(23): Workerman\Worker::runAll()
+#8 {main}
+2019-09-19 06:11:46 pid:28105 Worker[28105] process terminated
+2019-09-19 06:11:54 pid:28106 Error: Call to undefined method Lib\User\LoginRequest::parseFromStream() in /Users/gary/www/game/servers/php/Applications/Rpc/start.php:14
+Stack trace:
+#0 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), 'register\n\x05admin...')
+#1 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #30)
+#2 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2382): Workerman\Events\Select->loop()
+#3 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): Workerman\Worker->run()
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#7 /Users/gary/www/game/servers/php/Applications/Rpc/start.php(23): Workerman\Worker::runAll()
+#8 {main}
+2019-09-19 06:11:54 pid:28106 Worker[28106] process terminated
+2019-09-19 06:11:58 pid:28101 Workerman[start.php] stopping ...
+2019-09-19 06:11:58 pid:28101 worker[none:28107] exit with status 11
+2019-09-19 06:11:58 pid:28101 worker[none:28106] exit with status 11
+2019-09-19 06:11:58 pid:28101 worker[none:28105] exit with status 11
+2019-09-19 06:11:58 pid:28101 worker[none:28104] exit with status 11
+2019-09-19 06:11:58 pid:28101 Workerman[start.php] has been stopped
+2019-09-19 06:12:00 pid:29379 Workerman[start.php] start in DEBUG mode
+2019-09-19 06:12:03 pid:29385 Error: Call to undefined method Lib\User\LoginRequest::parseFromStream() in /Users/gary/www/game/servers/php/Applications/Rpc/start.php:14
+Stack trace:
+#0 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), 'register\n\x05admin...')
+#1 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#2 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2382): Workerman\Events\Select->loop()
+#3 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): Workerman\Worker->run()
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#7 /Users/gary/www/game/servers/php/Applications/Rpc/start.php(23): Workerman\Worker::runAll()
+#8 {main}
+2019-09-19 06:12:03 pid:29385 Worker[29385] process terminated
+2019-09-19 06:13:28 pid:29379 Workerman[start.php] stopping ...
+2019-09-19 06:13:28 pid:29379 worker[none:29385] exit with status 11
+2019-09-19 06:13:30 pid:29379 worker[none:29383] exit with status 9
+2019-09-19 06:13:30 pid:29379 worker[none:29384] exit with status 9
+2019-09-19 06:13:30 pid:29379 worker[none:29382] exit with status 9
+2019-09-19 06:13:30 pid:29379 Workerman[start.php] has been stopped
+2019-09-19 06:13:31 pid:29699 Workerman[start.php] start in DEBUG mode
+2019-09-19 06:13:34 pid:29703 Error: Call to undefined method Lib\User\LoginRequest::parseFromStream() in /Users/gary/www/game/servers/php/Applications/Rpc/start.php:14
+Stack trace:
+#0 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), 'register\n\x05admin...')
+#1 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#2 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2382): Workerman\Events\Select->loop()
+#3 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): Workerman\Worker->run()
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#7 /Users/gary/www/game/servers/php/Applications/Rpc/start.php(23): Workerman\Worker::runAll()
+#8 {main}
+2019-09-19 06:13:34 pid:29703 Worker[29703] process terminated
+2019-09-19 06:15:17 pid:29699 Workerman[start.php] stopping ...
+2019-09-19 06:15:17 pid:29699 worker[none:29703] exit with status 11
+2019-09-19 06:15:19 pid:29699 worker[none:29702] exit with status 9
+2019-09-19 06:15:19 pid:29699 worker[none:29701] exit with status 9
+2019-09-19 06:15:19 pid:29699 worker[none:29700] exit with status 9
+2019-09-19 06:15:19 pid:29699 Workerman[start.php] has been stopped
+2019-09-19 06:15:20 pid:30047 Workerman[start.php] start in DEBUG mode
+2019-09-19 06:15:23 pid:30051 Exception: Error occurred during parsing: Unexpected EOF inside skipped data in /Users/gary/www/game/servers/php/Applications/Rpc/start.php:14
+Stack trace:
+#0 /Users/gary/www/game/servers/php/Applications/Rpc/start.php(14): Google\Protobuf\Internal\Message->mergeFromString('register\n\x05admin...')
+#1 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), 'register\n\x05admin...')
+#2 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#3 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2382): Workerman\Events\Select->loop()
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): Workerman\Worker->run()
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#8 /Users/gary/www/game/servers/php/Applications/Rpc/start.php(23): Workerman\Worker::runAll()
+#9 {main}
+2019-09-19 06:15:23 pid:30051 Worker[30051] process terminated
+2019-09-19 06:17:30 pid:30047 Workerman[start.php] stopping ...
+2019-09-19 06:17:30 pid:30047 worker[none:30051] exit with status 11
+2019-09-19 06:17:32 pid:30047 worker[none:30050] exit with status 9
+2019-09-19 06:17:32 pid:30047 worker[none:30049] exit with status 9
+2019-09-19 06:17:32 pid:30047 worker[none:30048] exit with status 9
+2019-09-19 06:17:32 pid:30047 Workerman[start.php] has been stopped
+2019-09-19 06:17:34 pid:30466 Workerman[start.php] start in DEBUG mode
+2019-09-19 06:18:12 pid:30466 Workerman[start.php] stopping ...
+2019-09-19 06:18:14 pid:30466 worker[none:30471] exit with status 9
+2019-09-19 06:18:14 pid:30466 worker[none:30470] exit with status 9
+2019-09-19 06:18:14 pid:30466 worker[none:30472] exit with status 9
+2019-09-19 06:18:14 pid:30466 worker[none:30469] exit with status 9
+2019-09-19 06:18:14 pid:30466 Workerman[start.php] has been stopped
+2019-09-19 06:18:37 pid:30666 Workerman[start.php] start in DEBUG mode
+2019-09-19 06:19:12 pid:30666 Workerman[start.php] stopping ...
+2019-09-19 06:19:14 pid:30666 worker[none:30674] exit with status 9
+2019-09-19 06:19:14 pid:30666 worker[none:30676] exit with status 9
+2019-09-19 06:19:14 pid:30666 worker[none:30675] exit with status 9
+2019-09-19 06:19:14 pid:30666 worker[none:30673] exit with status 9
+2019-09-19 06:19:14 pid:30666 Workerman[start.php] has been stopped
+2019-09-19 06:19:15 pid:30800 Workerman[start.php] start in DEBUG mode
+2019-09-19 06:19:34 pid:30800 Workerman[start.php] stopping ...
+2019-09-19 06:19:36 pid:30800 worker[none:30804] exit with status 9
+2019-09-19 06:19:36 pid:30800 worker[none:30803] exit with status 9
+2019-09-19 06:19:36 pid:30800 worker[none:30802] exit with status 9
+2019-09-19 06:19:36 pid:30800 worker[none:30801] exit with status 9
+2019-09-19 06:19:36 pid:30800 Workerman[start.php] has been stopped
+2019-09-19 06:19:37 pid:30870 Workerman[start.php] start in DEBUG mode
+2019-09-19 06:19:58 pid:30870 Workerman[start.php] stopping ...
+2019-09-19 06:20:00 pid:30870 worker[none:30873] exit with status 9
+2019-09-19 06:20:00 pid:30870 worker[none:30874] exit with status 9
+2019-09-19 06:20:00 pid:30870 worker[none:30872] exit with status 9
+2019-09-19 06:20:00 pid:30870 worker[none:30871] exit with status 9
+2019-09-19 06:20:00 pid:30870 Workerman[start.php] has been stopped
+2019-09-19 06:20:01 pid:30950 Workerman[start.php] start in DEBUG mode
+2019-09-19 06:20:51 pid:30950 Workerman[start.php] stopping ...
+2019-09-19 06:20:53 pid:30950 worker[none:30952] exit with status 9
+2019-09-19 06:20:53 pid:30950 worker[none:30954] exit with status 9
+2019-09-19 06:20:53 pid:30950 worker[none:30953] exit with status 9
+2019-09-19 06:20:53 pid:30950 worker[none:30951] exit with status 9
+2019-09-19 06:20:53 pid:30950 Workerman[start.php] has been stopped
+2019-09-19 06:20:54 pid:31121 Workerman[start.php] start in DEBUG mode
+2019-09-19 06:33:05 pid:31121 Workerman[start.php] stopping ...
+2019-09-19 06:33:07 pid:31121 worker[none:31130] exit with status 9
+2019-09-19 06:33:07 pid:31121 worker[none:31131] exit with status 9
+2019-09-19 06:33:07 pid:31121 worker[none:31129] exit with status 9
+2019-09-19 06:33:07 pid:31121 worker[none:31128] exit with status 9
+2019-09-19 06:33:07 pid:31121 Workerman[start.php] has been stopped
+2019-09-19 06:33:09 pid:33619 Workerman[start.php] start in DEBUG mode
+2019-09-19 06:33:11 pid:33624 Error: Call to a member function serializeToString() on boolean in /Users/gary/www/game/servers/php/Applications/Rpc/start.php:32
+Stack trace:
+#0 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#1 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#2 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2382): Workerman\Events\Select->loop()
+#3 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): Workerman\Worker->run()
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#7 /Users/gary/www/game/servers/php/Applications/Rpc/start.php(38): Workerman\Worker::runAll()
+#8 {main}
+2019-09-19 06:33:11 pid:33624 Worker[33624] process terminated
+2019-09-19 06:52:09 pid:33619 Workerman[start.php] stopping ...
+2019-09-19 06:52:09 pid:33619 worker[none:33624] exit with status 11
+2019-09-19 06:52:11 pid:33619 worker[none:33623] exit with status 9
+2019-09-19 06:52:11 pid:33619 worker[none:33625] exit with status 9
+2019-09-19 06:52:11 pid:33619 worker[none:33622] exit with status 9
+2019-09-19 06:52:11 pid:33619 Workerman[start.php] has been stopped
+2019-09-19 06:52:12 pid:37328 Workerman[start.php] start in DEBUG mode
+2019-09-19 06:52:26 pid:37332 Error: Class '\Model\.' not found in /Users/gary/www/game/servers/php/Applications/Rpc/start.php:15
+Stack trace:
+#0 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#1 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#2 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2382): Workerman\Events\Select->loop()
+#3 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): Workerman\Worker->run()
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#7 /Users/gary/www/game/servers/php/Applications/Rpc/start.php(24): Workerman\Worker::runAll()
+#8 {main}
+2019-09-19 06:52:26 pid:37332 Worker[37332] process terminated
+2019-09-19 06:52:58 pid:37328 Workerman[start.php] stopping ...
+2019-09-19 06:52:58 pid:37328 worker[none:37332] exit with status 11
+2019-09-19 06:53:00 pid:37328 worker[none:37333] exit with status 9
+2019-09-19 06:53:00 pid:37328 worker[none:37334] exit with status 9
+2019-09-19 06:53:00 pid:37328 worker[none:37331] exit with status 9
+2019-09-19 06:53:00 pid:37328 Workerman[start.php] has been stopped
+2019-09-19 06:53:01 pid:37478 Workerman[start.php] start in DEBUG mode
+2019-09-19 06:53:04 pid:37484 Error: Class '\Model\.' not found in /Users/gary/www/game/servers/php/Applications/Rpc/start.php:16
+Stack trace:
+#0 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#1 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#2 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2382): Workerman\Events\Select->loop()
+#3 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): Workerman\Worker->run()
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#7 /Users/gary/www/game/servers/php/Applications/Rpc/start.php(25): Workerman\Worker::runAll()
+#8 {main}
+2019-09-19 06:53:04 pid:37484 Worker[37484] process terminated
+2019-09-19 06:53:31 pid:37478 Workerman[start.php] stopping ...
+2019-09-19 06:53:31 pid:37478 worker[none:37484] exit with status 11
+2019-09-19 06:53:33 pid:37478 worker[none:37483] exit with status 9
+2019-09-19 06:53:33 pid:37478 worker[none:37482] exit with status 9
+2019-09-19 06:53:33 pid:37478 worker[none:37481] exit with status 9
+2019-09-19 06:53:33 pid:37478 Workerman[start.php] has been stopped
+2019-09-19 06:53:35 pid:37603 Workerman[start.php] start in DEBUG mode
+2019-09-19 06:53:43 pid:37607 Error: Class '\Model\.' not found in /Users/gary/www/game/servers/php/Applications/Rpc/start.php:16
+Stack trace:
+#0 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#1 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#2 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2382): Workerman\Events\Select->loop()
+#3 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): Workerman\Worker->run()
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#7 /Users/gary/www/game/servers/php/Applications/Rpc/start.php(25): Workerman\Worker::runAll()
+#8 {main}
+2019-09-19 06:53:43 pid:37607 Worker[37607] process terminated
+2019-09-19 06:54:20 pid:37603 Workerman[start.php] stopping ...
+2019-09-19 06:54:20 pid:37603 worker[none:37607] exit with status 11
+2019-09-19 06:54:22 pid:37603 worker[none:37606] exit with status 9
+2019-09-19 06:54:22 pid:37603 worker[none:37605] exit with status 9
+2019-09-19 06:54:22 pid:37603 worker[none:37604] exit with status 9
+2019-09-19 06:54:22 pid:37603 Workerman[start.php] has been stopped
+2019-09-19 06:54:24 pid:37765 Workerman[start.php] start in DEBUG mode
+2019-09-19 06:55:47 pid:37765 Workerman[start.php] stopping ...
+2019-09-19 06:55:49 pid:37765 worker[none:37769] exit with status 9
+2019-09-19 06:55:49 pid:37765 worker[none:37771] exit with status 9
+2019-09-19 06:55:49 pid:37765 worker[none:37770] exit with status 9
+2019-09-19 06:55:49 pid:37765 worker[none:37768] exit with status 9
+2019-09-19 06:55:49 pid:37765 Workerman[start.php] has been stopped
+2019-09-19 06:55:50 pid:38035 Workerman[start.php] start in DEBUG mode
+2019-09-19 07:18:30 pid:38035 Workerman[start.php] stopping ...
+2019-09-19 07:18:32 pid:38035 worker[none:38037] exit with status 9
+2019-09-19 07:18:32 pid:38035 worker[none:38039] exit with status 9
+2019-09-19 07:18:32 pid:38035 worker[none:38038] exit with status 9
+2019-09-19 07:18:32 pid:38035 worker[none:38036] exit with status 9
+2019-09-19 07:18:32 pid:38035 Workerman[start.php] has been stopped
+2019-09-19 07:18:33 pid:42475 Workerman[start.php] start in DEBUG mode
+2019-09-19 07:18:56 pid:42479 Error: Call to undefined method Model\User::login2() in /Users/gary/www/game/servers/php/Applications/Rpc/start.php:21
+Stack trace:
+#0 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#1 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #33)
+#2 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2382): Workerman\Events\Select->loop()
+#3 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): Workerman\Worker->run()
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#7 /Users/gary/www/game/servers/php/Applications/Rpc/start.php(35): Workerman\Worker::runAll()
+#8 {main}
+2019-09-19 07:18:56 pid:42479 Worker[42479] process terminated
+2019-09-19 07:19:03 pid:42475 Workerman[start.php] stopping ...
+2019-09-19 07:19:03 pid:42475 worker[none:42479] exit with status 11
+2019-09-19 07:19:05 pid:42475 worker[none:42480] exit with status 9
+2019-09-19 07:19:05 pid:42475 worker[none:42481] exit with status 9
+2019-09-19 07:19:05 pid:42475 worker[none:42478] exit with status 9
+2019-09-19 07:19:05 pid:42475 Workerman[start.php] has been stopped
+2019-09-19 07:19:07 pid:42585 Workerman[start.php] start in DEBUG mode
+2019-09-19 07:19:10 pid:42590 Error: Call to undefined method Model\User::login2() in /Users/gary/www/game/servers/php/Applications/Rpc/start.php:21
+Stack trace:
+#0 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#1 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#2 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2382): Workerman\Events\Select->loop()
+#3 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): Workerman\Worker->run()
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#7 /Users/gary/www/game/servers/php/Applications/Rpc/start.php(35): Workerman\Worker::runAll()
+#8 {main}
+2019-09-19 07:19:10 pid:42590 Worker[42590] process terminated
+2019-09-19 07:20:08 pid:42585 Workerman[start.php] stopping ...
+2019-09-19 07:20:08 pid:42585 worker[none:42590] exit with status 11
+2019-09-19 07:20:10 pid:42585 worker[none:42589] exit with status 9
+2019-09-19 07:20:10 pid:42585 worker[none:42591] exit with status 9
+2019-09-19 07:20:10 pid:42585 worker[none:42588] exit with status 9
+2019-09-19 07:20:10 pid:42585 Workerman[start.php] has been stopped
+2019-09-19 07:20:12 pid:42797 Workerman[start.php] start in DEBUG mode
+2019-09-19 07:20:14 pid:42798 Error: Call to undefined method Model\User::login2() in /Users/gary/www/game/servers/php/Applications/Rpc/start.php:20
+Stack trace:
+#0 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#1 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#2 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2382): Workerman\Events\Select->loop()
+#3 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): Workerman\Worker->run()
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#7 /Users/gary/www/game/servers/php/Applications/Rpc/start.php(34): Workerman\Worker::runAll()
+#8 {main}
+2019-09-19 07:20:14 pid:42798 Worker[42798] process terminated
+2019-09-19 07:21:13 pid:42797 Workerman[start.php] stopping ...
+2019-09-19 07:21:13 pid:42797 worker[none:42798] exit with status 11
+2019-09-19 07:21:15 pid:42797 worker[none:42801] exit with status 9
+2019-09-19 07:21:15 pid:42797 worker[none:42800] exit with status 9
+2019-09-19 07:21:15 pid:42797 worker[none:42799] exit with status 9
+2019-09-19 07:21:15 pid:42797 Workerman[start.php] has been stopped
+2019-09-19 07:21:16 pid:43033 Workerman[start.php] start in DEBUG mode
+2019-09-19 07:21:19 pid:43036 Error: Call to undefined method Model\User::login2() in /Users/gary/www/game/servers/php/Applications/Rpc/start.php:20
+Stack trace:
+#0 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Connection/TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#1 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Events/Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#2 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(2382): Workerman\Events\Select->loop()
+#3 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1490): Workerman\Worker->run()
+#4 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1320): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#5 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker::forkWorkersForLinux()
+#6 /Users/gary/www/game/servers/php/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#7 /Users/gary/www/game/servers/php/Applications/Rpc/start.php(34): Workerman\Worker::runAll()
+#8 {main}
+2019-09-19 07:21:19 pid:43036 Worker[43036] process terminated
+2019-09-19 07:22:59 pid:43033 Workerman[start.php] stopping ...
+2019-09-19 07:22:59 pid:43033 worker[none:43036] exit with status 11
+2019-09-19 07:23:01 pid:43033 worker[none:43039] exit with status 9
+2019-09-19 07:23:01 pid:43033 worker[none:43038] exit with status 9
+2019-09-19 07:23:01 pid:43033 worker[none:43037] exit with status 9
+2019-09-19 07:23:01 pid:43033 Workerman[start.php] has been stopped
+2019-09-19 07:23:03 pid:43406 Workerman[start.php] start in DEBUG mode
+2019-09-19 07:23:56 pid:43406 Workerman[start.php] stopping ...
+2019-09-19 07:23:58 pid:43406 worker[none:43414] exit with status 9
+2019-09-19 07:23:58 pid:43406 worker[none:43413] exit with status 9
+2019-09-19 07:23:58 pid:43406 worker[none:43412] exit with status 9
+2019-09-19 07:23:58 pid:43406 worker[none:43411] exit with status 9
+2019-09-19 07:23:58 pid:43406 Workerman[start.php] has been stopped
+2019-09-19 07:24:00 pid:43593 Workerman[start.php] start in DEBUG mode
+2019-09-19 07:51:27 pid:43593 Workerman[start.php] stopping ...
+2019-09-19 07:51:29 pid:43593 worker[none:43596] exit with status 9
+2019-09-19 07:51:29 pid:43593 worker[none:43597] exit with status 9
+2019-09-19 07:51:29 pid:43593 worker[none:43595] exit with status 9
+2019-09-19 07:51:29 pid:43593 worker[none:43594] exit with status 9
+2019-09-19 07:51:29 pid:43593 Workerman[start.php] has been stopped

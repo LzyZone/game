@@ -13,9 +13,22 @@ class ComposerStaticInit53bd66c7ed23a4c6f4d42de8cfdd7bed
             'WuTi\\' => 5,
             'Workerman\\' => 10,
         ),
+        'P' => 
+        array (
+            'Protocols\\' => 10,
+        ),
+        'M' => 
+        array (
+            'Model\\' => 6,
+        ),
+        'L' => 
+        array (
+            'Lib\\' => 4,
+        ),
         'G' => 
         array (
             'GatewayWorker\\' => 14,
+            'GPBMetadata\\' => 12,
         ),
     );
 
@@ -32,9 +45,25 @@ class ComposerStaticInit53bd66c7ed23a4c6f4d42de8cfdd7bed
         array (
             0 => __DIR__ . '/..' . '/workerman/workerman',
         ),
+        'Protocols\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Applications/Rpc/Protocols',
+        ),
+        'Model\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Applications/Rpc/Model',
+        ),
+        'Lib\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Applications/Rpc/Lib',
+        ),
         'GatewayWorker\\' => 
         array (
             0 => __DIR__ . '/..' . '/workerman/gateway-worker/src',
+        ),
+        'GPBMetadata\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Applications/Rpc/GPBMetadata',
         ),
     );
 

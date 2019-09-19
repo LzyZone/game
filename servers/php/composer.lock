@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fa8501a5125448508a2853cb58fe9c17",
+    "content-hash": "06f8d1f28424211ff6a8d31e9e1e9083",
     "packages": [
         {
             "name": "workerman/gateway-worker",
@@ -104,12 +104,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/LzyZone/wuti.git",
-                "reference": "cb72e5a31f04759e3c2e9bcb9f8a25420a0e7456"
+                "reference": "b3cb16c714df07e8a359cfb9238aabdb1d08235b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LzyZone/wuti/zipball/cb72e5a31f04759e3c2e9bcb9f8a25420a0e7456",
-                "reference": "cb72e5a31f04759e3c2e9bcb9f8a25420a0e7456",
+                "url": "https://api.github.com/repos/LzyZone/wuti/zipball/b3cb16c714df07e8a359cfb9238aabdb1d08235b",
+                "reference": "b3cb16c714df07e8a359cfb9238aabdb1d08235b",
                 "shasum": ""
             },
             "type": "project",
@@ -126,7 +126,7 @@
                 "source": "https://github.com/LzyZone/wuti/tree/master",
                 "issues": "https://github.com/LzyZone/wuti/issues"
             },
-            "time": "2019-09-10T10:12:22+00:00"
+            "time": "2019-09-11T08:14:40+00:00"
         }
     ],
     "packages-dev": [],

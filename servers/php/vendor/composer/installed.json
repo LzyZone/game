@@ -102,15 +102,15 @@
         "source": {
             "type": "git",
             "url": "https://github.com/LzyZone/wuti.git",
-            "reference": "cb72e5a31f04759e3c2e9bcb9f8a25420a0e7456"
+            "reference": "b3cb16c714df07e8a359cfb9238aabdb1d08235b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/LzyZone/wuti/zipball/cb72e5a31f04759e3c2e9bcb9f8a25420a0e7456",
-            "reference": "cb72e5a31f04759e3c2e9bcb9f8a25420a0e7456",
+            "url": "https://api.github.com/repos/LzyZone/wuti/zipball/b3cb16c714df07e8a359cfb9238aabdb1d08235b",
+            "reference": "b3cb16c714df07e8a359cfb9238aabdb1d08235b",
             "shasum": ""
         },
-        "time": "2019-09-10T10:12:22+00:00",
+        "time": "2019-09-11T08:14:40+00:00",
         "type": "project",
         "installation-source": "source",
         "autoload": {
